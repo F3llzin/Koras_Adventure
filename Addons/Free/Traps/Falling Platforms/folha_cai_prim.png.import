@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcg6md77ltlt5"
-path="res://.godot/imported/checkpoint_neve.png-1e2820ba05fe59a1f459104b28747489.ctex"
+uid="uid://dp8ykpxiih3pb"
+path="res://.godot/imported/folha_cai_prim.png-13b29cd8bdf22c78aa69f9b874a850d4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Addons/Free/Artes_jogo/checkpoint_neve.png"
-dest_files=["res://.godot/imported/checkpoint_neve.png-1e2820ba05fe59a1f459104b28747489.ctex"]
+source_file="res://Addons/Free/Traps/Falling Platforms/folha_cai_prim.png"
+dest_files=["res://.godot/imported/folha_cai_prim.png-13b29cd8bdf22c78aa69f9b874a850d4.ctex"]
 
 [params]
 

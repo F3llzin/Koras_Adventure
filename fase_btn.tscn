@@ -12,6 +12,7 @@ script = ExtResource("1_iuaef")
 
 [node name="fase" type="Sprite2D" parent="."]
 position = Vector2(3.83333, 3.16667)
+scale = Vector2(0.01, 0.01)
 
 [node name="bloqueio" type="Sprite2D" parent="."]
 position = Vector2(10.3333, 7.83333)

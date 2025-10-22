@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qfcfgs1bgcgb"
-path="res://.godot/imported/Cherries.png-83f493ef17ece69cf0f74e5f722886f6.ctex"
+uid="uid://df04cdreqmctj"
+path="res://.godot/imported/continuar_normal.png-6a79293f33a4545618d817d3dc612fb4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Addons/Free/Items/Fruits/Cherries.png"
-dest_files=["res://.godot/imported/Cherries.png-83f493ef17ece69cf0f74e5f722886f6.ctex"]
+source_file="res://Addons/Free/Menu/Buttons/continuar_normal.png"
+dest_files=["res://.godot/imported/continuar_normal.png-6a79293f33a4545618d817d3dc612fb4.ctex"]
 
 [params]
 

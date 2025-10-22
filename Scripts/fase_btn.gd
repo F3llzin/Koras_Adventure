@@ -6,10 +6,10 @@ extends Button
 @onready var fase = $fase
 @onready var bloqueio = $bloqueio
 @onready var troca_btn = $troca_btn
-var nmr_um = preload("res://Addons/Free/Menu/Levels/01.png")
-var nmr_dois = preload("res://Addons/Free/Menu/Levels/02.png")
-var nmr_tres = preload("res://Addons/Free/Menu/Levels/03.png")
-var nmr_quatro = preload("res://Addons/Free/Menu/Levels/04.png")
+var nmr_um = preload("res://Addons/Free/Menu/Levels/1.png")
+var nmr_dois = preload("res://Addons/Free/Menu/Levels/2.png")
+var nmr_tres = preload("res://Addons/Free/Menu/Levels/3.png")
+var nmr_quatro = preload("res://Addons/Free/Menu/Levels/4.png")
 
 func _ready():
 	if Global.fase > fase_bloqueio:

@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://dd0x0yhwj2esa"]
+[gd_scene load_steps=3 format=3 uid="uid://dd0x0yhwj2esa"]
 
+[ext_resource type="Texture2D" uid="uid://ox7nfeixyn6b" path="res://Addons/Free/Artes_jogo/bg_seletor_fase.png" id="1_3l6xx"]
 [ext_resource type="PackedScene" uid="uid://dm6valn4sw22r" path="res://fase_btn.tscn" id="1_bcumk"]
 
 [node name="seletor_fases" type="Control"]
@@ -9,6 +10,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Bg" type="TextureRect" parent="."]
+offset_top = -14.8235
+offset_right = 1152.0
+offset_bottom = 731.672
+texture = ExtResource("1_3l6xx")
+expand_mode = 5
 
 [node name="fase_btn" parent="." instance=ExtResource("1_bcumk")]
 layout_mode = 0

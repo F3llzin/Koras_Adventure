@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cxb7rpxgq61i"]
+[gd_scene load_steps=22 format=3 uid="uid://cxb7rpxgq61i"]
 
 [ext_resource type="Script" path="res://scripts/Telainicio.gd" id="1_tj7fl"]
 [ext_resource type="Texture2D" uid="uid://cgnsgmhrtopdn" path="res://Addons/Free/Artes_jogo/splash_tela.png" id="2_lre1o"]
@@ -10,8 +10,48 @@
 [ext_resource type="Theme" uid="uid://bkn0dftw8jsu3" path="res://comecar_btn.tres" id="7_3h0r3"]
 [ext_resource type="Texture2D" uid="uid://b02x8voh7cxy1" path="res://Addons/Free/Artes_jogo/cadeado.png" id="7_bco6m"]
 [ext_resource type="AudioStream" uid="uid://coj1gr4fggeap" path="res://Addons/Free/Sons/Trocadebotão.mp3" id="7_qbqnn"]
+[ext_resource type="Texture2D" uid="uid://bcmeq6ljjnk2l" path="res://Addons/Free/Menu/Buttons/continuar_focus.png" id="7_shefo"]
+[ext_resource type="Texture2D" uid="uid://df04cdreqmctj" path="res://Addons/Free/Menu/Buttons/continuar_normal.png" id="8_107t7"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6h0bj"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yibu1"]
+content_margin_top = 15.0
+texture = ExtResource("7_shefo")
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_li7r5"]
+content_margin_top = 15.0
+texture = ExtResource("7_shefo")
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y3kmu"]
+content_margin_top = 15.0
+texture = ExtResource("8_107t7")
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bi2fx"]
+content_margin_top = 15.0
+texture = ExtResource("7_shefo")
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="Theme" id="Theme_a7sn4"]
+Button/styles/focus = SubResource("StyleBoxTexture_yibu1")
+Button/styles/hover = SubResource("StyleBoxTexture_li7r5")
+Button/styles/normal = SubResource("StyleBoxTexture_y3kmu")
+Button/styles/pressed = SubResource("StyleBoxTexture_bi2fx")
 
 [sub_resource type="Animation" id="Animation_a65uk"]
 length = 0.001
@@ -141,11 +181,11 @@ expand_mode = 5
 
 [node name="K-A" type="TextureRect" parent="."]
 layout_mode = 2
-offset_left = 355.0
-offset_top = 135.0
-offset_right = 2355.0
-offset_bottom = 1135.0
-scale = Vector2(0.23, 0.23)
+offset_left = 359.0
+offset_top = 134.0
+offset_right = 2359.0
+offset_bottom = 1134.0
+scale = Vector2(0.22, 0.22)
 texture = ExtResource("3_heoj1")
 
 [node name="Correcao" type="ColorRect" parent="."]
@@ -174,6 +214,8 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = -18.0
+offset_bottom = -18.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/margin_top = 20
@@ -209,7 +251,12 @@ theme_override_styles/separator = SubResource("StyleBoxEmpty_6h0bj")
 
 [node name="Button_continue" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-text = "continuar"
+theme = SubResource("Theme_a7sn4")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+text = "                 "
 
 [node name="bloqueio" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/Button_continue"]
 position = Vector2(94, 25)
