@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=3 uid="uid://bsh5thx504yep"]
+[gd_scene load_steps=55 format=3 uid="uid://bsh5thx504yep"]
 
 [ext_resource type="Script" path="res://scripts/Mundo.gd" id="1_i3p3u"]
 [ext_resource type="PackedScene" uid="uid://d0et5ubiolsqn" path="res://coletavel_outono.tscn" id="2_h3tlj"]
@@ -26,10 +26,13 @@
 [ext_resource type="Texture2D" uid="uid://tfong2ny4dfq" path="res://Addons/Free/Items/Fruits/noz.png" id="21_hh5uc"]
 [ext_resource type="Script" path="res://Scripts/transicao.gd" id="23_1kmm5"]
 [ext_resource type="Texture2D" uid="uid://b4f1v5d32io3f" path="res://Addons/Free/Menu/Buttons/Other/vida.png" id="23_njxoc"]
-[ext_resource type="Texture2D" uid="uid://cyo2tvmvt8dhq" path="res://Addons/Free/Menu/Buttons/seta_normal.png" id="23_vqcly"]
+[ext_resource type="Texture2D" uid="uid://dopgbil0a2x25" path="res://Addons/Free/Menu/Buttons/seta_lado_normal.png" id="24_kyh03"]
 [ext_resource type="PackedScene" uid="uid://b3545jl6vdnu8" path="res://pause_menu.tscn" id="24_mku6t"]
 [ext_resource type="Shader" path="res://shaders/transicao.gdshader" id="24_whxtc"]
+[ext_resource type="Texture2D" uid="uid://dcdpk4eti2aca" path="res://Addons/Free/Menu/Buttons/seta_lado_press.png" id="25_5b0f2"]
 [ext_resource type="Script" path="res://Scripts/color.gd" id="25_rb68b"]
+[ext_resource type="Texture2D" uid="uid://bp4xaw0mixp5k" path="res://Addons/Free/Menu/Buttons/seta_pulo_normal.png" id="26_6gq8w"]
+[ext_resource type="Texture2D" uid="uid://d0kk8fpvvnqoc" path="res://Addons/Free/Menu/Buttons/seta_pulo_press.png" id="27_2aipt"]
 [ext_resource type="PackedScene" uid="uid://d0p8x1lammvn0" path="res://falling_plataform.tscn" id="31_8gkyi"]
 [ext_resource type="PackedScene" uid="uid://6nmpv7lm4nij" path="res://chegada.tscn" id="31_cfk2l"]
 [ext_resource type="Theme" uid="uid://cacpanawqld15" path="res://PAUSE.tres" id="31_ddpkv"]
@@ -547,28 +550,27 @@ shape = SubResource("RectangleShape2D_h8yfa")
 [node name="mobile" type="CanvasLayer" parent="."]
 
 [node name="ui_esq" type="TouchScreenButton" parent="mobile"]
-position = Vector2(328, 520)
-rotation = 1.5708
+position = Vector2(328, 647)
+rotation = 3.14159
 scale = Vector2(4, 4)
-texture_normal = ExtResource("23_vqcly")
-texture_pressed = ExtResource("23_vqcly")
+texture_normal = ExtResource("24_kyh03")
+texture_pressed = ExtResource("25_5b0f2")
 action = "ui_right"
 visibility_mode = 1
 
 [node name="ui_dir" type="TouchScreenButton" parent="mobile"]
-position = Vector2(0, 648)
-rotation = -1.5708
+position = Vector2(3, 519)
 scale = Vector2(4, 4)
-texture_normal = ExtResource("23_vqcly")
-texture_pressed = ExtResource("23_vqcly")
+texture_normal = ExtResource("24_kyh03")
+texture_pressed = ExtResource("25_5b0f2")
 action = "ui_left"
 visibility_mode = 1
 
 [node name="ui_pulo" type="TouchScreenButton" parent="mobile"]
 position = Vector2(1024, 520)
 scale = Vector2(4, 4)
-texture_normal = ExtResource("23_vqcly")
-texture_pressed = ExtResource("23_vqcly")
+texture_normal = ExtResource("26_6gq8w")
+texture_pressed = ExtResource("27_2aipt")
 action = "ui_accept"
 visibility_mode = 1
 

@@ -47,6 +47,10 @@ mov._esquerda={
 ]
 }
 
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
 [layer_names]
 
 2d_physics/layer_1="jogador"

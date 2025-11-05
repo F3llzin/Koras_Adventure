@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=3 uid="uid://cie6am2l84ktx"]
+[gd_scene load_steps=61 format=3 uid="uid://cie6am2l84ktx"]
 
 [ext_resource type="Script" path="res://scripts/Mundo.gd" id="1_2lxy0"]
 [ext_resource type="PackedScene" uid="uid://d7e3ujavp710" path="res://garrafa_vida.tscn" id="3_eh5qm"]
@@ -22,17 +22,20 @@
 [ext_resource type="PackedScene" uid="uid://6nmpv7lm4nij" path="res://chegada.tscn" id="17_xtgcd"]
 [ext_resource type="Texture2D" uid="uid://dvb0inhqcqxny" path="res://Addons/Free/Artes_jogo/ceu_inverno.png" id="19_d1w26"]
 [ext_resource type="Texture2D" uid="uid://cja1yh00hlpc1" path="res://Addons/Free/Artes_jogo/BG_Inverno_montanha.png" id="20_lwvo6"]
-[ext_resource type="Texture2D" uid="uid://cyo2tvmvt8dhq" path="res://Addons/Free/Menu/Buttons/seta_normal.png" id="21_kuywl"]
 [ext_resource type="Texture2D" uid="uid://cu7lb20n20pkf" path="res://Addons/Free/Artes_jogo/Bg_inverno.png" id="21_nrsxn"]
 [ext_resource type="PackedScene" uid="uid://bt5bn0p70du3r" path="res://zona_queda.tscn" id="21_phe0a"]
 [ext_resource type="Script" path="res://Scripts/gerenciador_hud.gd" id="22_ldwum"]
 [ext_resource type="Texture2D" uid="uid://cmkh15bb5wb5g" path="res://Addons/Free/Main Characters/Inimigo Urso/Urso_andando.png" id="23_75wdl"]
 [ext_resource type="Texture2D" uid="uid://b4f1v5d32io3f" path="res://Addons/Free/Menu/Buttons/Other/vida.png" id="25_45a6k"]
 [ext_resource type="Script" path="res://Scripts/transicao.gd" id="26_bbq6m"]
+[ext_resource type="Texture2D" uid="uid://dopgbil0a2x25" path="res://Addons/Free/Menu/Buttons/seta_lado_normal.png" id="26_icpeu"]
 [ext_resource type="Shader" path="res://shaders/transicao.gdshader" id="27_i3j2y"]
+[ext_resource type="Texture2D" uid="uid://dcdpk4eti2aca" path="res://Addons/Free/Menu/Buttons/seta_lado_press.png" id="27_mgapq"]
 [ext_resource type="Script" path="res://Scripts/color.gd" id="28_67tub"]
+[ext_resource type="Texture2D" uid="uid://bp4xaw0mixp5k" path="res://Addons/Free/Menu/Buttons/seta_pulo_normal.png" id="28_bhff0"]
 [ext_resource type="PackedScene" uid="uid://b3545jl6vdnu8" path="res://pause_menu.tscn" id="29_6b7v0"]
 [ext_resource type="Texture2D" uid="uid://le2g7em78vs4" path="res://Addons/Free/Items/Fruits/bola_neve_ofc_real.png" id="29_ckl2f"]
+[ext_resource type="Texture2D" uid="uid://d0kk8fpvvnqoc" path="res://Addons/Free/Menu/Buttons/seta_pulo_press.png" id="29_myfas"]
 [ext_resource type="Theme" uid="uid://cacpanawqld15" path="res://PAUSE.tres" id="29_nixwd"]
 [ext_resource type="PackedScene" uid="uid://jpsjrpxyirsq" path="res://coletavel_inverno.tscn" id="31_lxhqo"]
 [ext_resource type="AudioStream" uid="uid://gd8dre4ts8uk" path="res://Addons/Free/Sons/musica_inverno.mp3" id="35_fujop"]
@@ -843,28 +846,27 @@ shape = SubResource("RectangleShape2D_h8yfa")
 [node name="mobile" type="CanvasLayer" parent="."]
 
 [node name="ui_esq" type="TouchScreenButton" parent="mobile"]
-position = Vector2(328, 520)
-rotation = 1.5708
+position = Vector2(328, 647)
+rotation = 3.14159
 scale = Vector2(4, 4)
-texture_normal = ExtResource("21_kuywl")
-texture_pressed = ExtResource("21_kuywl")
+texture_normal = ExtResource("26_icpeu")
+texture_pressed = ExtResource("27_mgapq")
 action = "ui_right"
 visibility_mode = 1
 
 [node name="ui_dir" type="TouchScreenButton" parent="mobile"]
-position = Vector2(0, 648)
-rotation = -1.5708
+position = Vector2(3, 519)
 scale = Vector2(4, 4)
-texture_normal = ExtResource("21_kuywl")
-texture_pressed = ExtResource("21_kuywl")
+texture_normal = ExtResource("26_icpeu")
+texture_pressed = ExtResource("27_mgapq")
 action = "ui_left"
 visibility_mode = 1
 
 [node name="ui_pulo" type="TouchScreenButton" parent="mobile"]
 position = Vector2(1024, 520)
 scale = Vector2(4, 4)
-texture_normal = ExtResource("21_kuywl")
-texture_pressed = ExtResource("21_kuywl")
+texture_normal = ExtResource("28_bhff0")
+texture_pressed = ExtResource("29_myfas")
 action = "ui_accept"
 visibility_mode = 1
 

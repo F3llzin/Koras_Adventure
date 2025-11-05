@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://bv1f1gexdaur1"]
+[gd_scene load_steps=50 format=3 uid="uid://bv1f1gexdaur1"]
 
 [ext_resource type="Script" path="res://scripts/Mundo.gd" id="1_c04g2"]
 [ext_resource type="PackedScene" uid="uid://b3545jl6vdnu8" path="res://pause_menu.tscn" id="1_yb224"]
@@ -27,15 +27,18 @@
 [ext_resource type="Texture2D" uid="uid://bk0tq8ahjpji6" path="res://Addons/Free/Items/Fruits/pixil-frame-0 (2).png" id="19_gxn8p"]
 [ext_resource type="Texture2D" uid="uid://bbnh4g0klam78" path="res://Addons/Free/Items/Fruits/pixil-frame-0 (3).png" id="20_6hi7c"]
 [ext_resource type="Texture2D" uid="uid://brsh0ip44ke8l" path="res://Addons/Free/Main Characters/Inimigo Caranguejo/caranguejo_icon.png" id="20_nm7bo"]
+[ext_resource type="Texture2D" uid="uid://dopgbil0a2x25" path="res://Addons/Free/Menu/Buttons/seta_lado_normal.png" id="23_ep0ml"]
 [ext_resource type="Texture2D" uid="uid://b4f1v5d32io3f" path="res://Addons/Free/Menu/Buttons/Other/vida.png" id="24_7h85p"]
+[ext_resource type="Texture2D" uid="uid://dcdpk4eti2aca" path="res://Addons/Free/Menu/Buttons/seta_lado_press.png" id="24_a14nc"]
 [ext_resource type="PackedScene" uid="uid://cyxhlk1rr7hqm" path="res://checkpoint.tscn" id="25_bcai5"]
+[ext_resource type="Texture2D" uid="uid://bp4xaw0mixp5k" path="res://Addons/Free/Menu/Buttons/seta_pulo_normal.png" id="25_kckf4"]
 [ext_resource type="Script" path="res://Scripts/transicao.gd" id="26_8i45e"]
+[ext_resource type="Texture2D" uid="uid://d0kk8fpvvnqoc" path="res://Addons/Free/Menu/Buttons/seta_pulo_press.png" id="26_habak"]
 [ext_resource type="Shader" path="res://shaders/transicao.gdshader" id="27_fdjhp"]
 [ext_resource type="Script" path="res://Scripts/color.gd" id="28_2w73j"]
 [ext_resource type="PackedScene" uid="uid://bt5bn0p70du3r" path="res://zona_queda.tscn" id="29_cngpo"]
 [ext_resource type="Theme" uid="uid://cacpanawqld15" path="res://PAUSE.tres" id="30_shspf"]
 [ext_resource type="AudioStream" uid="uid://cc80wxii5loi5" path="res://Addons/Free/Sons/musica_verao.mp3" id="31_rdyt4"]
-[ext_resource type="Texture2D" uid="uid://cyo2tvmvt8dhq" path="res://Addons/Free/Menu/Buttons/seta_normal.png" id="31_x177e"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_eeb8d"]
 tile_data = PackedInt32Array(0, 1, 0)
@@ -443,28 +446,27 @@ shape = SubResource("RectangleShape2D_h8yfa")
 [node name="mobile" type="CanvasLayer" parent="."]
 
 [node name="ui_esq" type="TouchScreenButton" parent="mobile"]
-position = Vector2(328, 520)
-rotation = 1.5708
+position = Vector2(328, 647)
+rotation = 3.14159
 scale = Vector2(4, 4)
-texture_normal = ExtResource("31_x177e")
-texture_pressed = ExtResource("31_x177e")
+texture_normal = ExtResource("23_ep0ml")
+texture_pressed = ExtResource("24_a14nc")
 action = "ui_right"
 visibility_mode = 1
 
 [node name="ui_dir" type="TouchScreenButton" parent="mobile"]
-position = Vector2(0, 648)
-rotation = -1.5708
+position = Vector2(3, 519)
 scale = Vector2(4, 4)
-texture_normal = ExtResource("31_x177e")
-texture_pressed = ExtResource("31_x177e")
+texture_normal = ExtResource("23_ep0ml")
+texture_pressed = ExtResource("24_a14nc")
 action = "ui_left"
 visibility_mode = 1
 
 [node name="ui_pulo" type="TouchScreenButton" parent="mobile"]
 position = Vector2(1024, 520)
 scale = Vector2(4, 4)
-texture_normal = ExtResource("31_x177e")
-texture_pressed = ExtResource("31_x177e")
+texture_normal = ExtResource("25_kckf4")
+texture_pressed = ExtResource("26_habak")
 action = "ui_accept"
 visibility_mode = 1
 
