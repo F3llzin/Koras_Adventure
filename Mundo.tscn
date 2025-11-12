@@ -27,13 +27,13 @@
 [ext_resource type="Texture2D" uid="uid://bk0tq8ahjpji6" path="res://Addons/Free/Items/Fruits/pixil-frame-0 (2).png" id="19_gxn8p"]
 [ext_resource type="Texture2D" uid="uid://bbnh4g0klam78" path="res://Addons/Free/Items/Fruits/pixil-frame-0 (3).png" id="20_6hi7c"]
 [ext_resource type="Texture2D" uid="uid://brsh0ip44ke8l" path="res://Addons/Free/Main Characters/Inimigo Caranguejo/caranguejo_icon.png" id="20_nm7bo"]
-[ext_resource type="Texture2D" uid="uid://dopgbil0a2x25" path="res://Addons/Free/Menu/Buttons/seta_lado_normal.png" id="23_ep0ml"]
+[ext_resource type="Texture2D" uid="uid://c21dn5at16bc6" path="res://Addons/Free/Menu/Buttons/s_n.png" id="23_f7hru"]
+[ext_resource type="Texture2D" uid="uid://ch1wdkmkjmhx6" path="res://Addons/Free/Menu/Buttons/s_p.png" id="24_4pin5"]
 [ext_resource type="Texture2D" uid="uid://b4f1v5d32io3f" path="res://Addons/Free/Menu/Buttons/Other/vida.png" id="24_7h85p"]
-[ext_resource type="Texture2D" uid="uid://dcdpk4eti2aca" path="res://Addons/Free/Menu/Buttons/seta_lado_press.png" id="24_a14nc"]
 [ext_resource type="PackedScene" uid="uid://cyxhlk1rr7hqm" path="res://checkpoint.tscn" id="25_bcai5"]
-[ext_resource type="Texture2D" uid="uid://bp4xaw0mixp5k" path="res://Addons/Free/Menu/Buttons/seta_pulo_normal.png" id="25_kckf4"]
+[ext_resource type="Texture2D" uid="uid://b34dlgu6ww52c" path="res://Addons/Free/Menu/Buttons/sp_n.png" id="25_n7p3g"]
 [ext_resource type="Script" path="res://Scripts/transicao.gd" id="26_8i45e"]
-[ext_resource type="Texture2D" uid="uid://d0kk8fpvvnqoc" path="res://Addons/Free/Menu/Buttons/seta_pulo_press.png" id="26_habak"]
+[ext_resource type="Texture2D" uid="uid://bd00x3ogbud7c" path="res://Addons/Free/Menu/Buttons/sp_p.png" id="26_vww1v"]
 [ext_resource type="Shader" path="res://shaders/transicao.gdshader" id="27_fdjhp"]
 [ext_resource type="Script" path="res://Scripts/color.gd" id="28_2w73j"]
 [ext_resource type="PackedScene" uid="uid://bt5bn0p70du3r" path="res://zona_queda.tscn" id="29_cngpo"]
@@ -204,16 +204,16 @@ position = Vector2(1382, -95)
 
 [node name="espinhos" type="Node2D" parent="."]
 position = Vector2(68, 8)
-scale = Vector2(0.8, 0.8)
+scale = Vector2(0.75, 0.75)
 
 [node name="espinhos_area3" parent="espinhos" instance=ExtResource("15_cigg7")]
-position = Vector2(1185, 40)
+position = Vector2(1264, 42.6667)
 
 [node name="espinhos_area" parent="espinhos" instance=ExtResource("15_cigg7")]
-position = Vector2(346.25, 60)
+position = Vector2(369.333, 64)
 
 [node name="espinhos_area4" parent="espinhos" instance=ExtResource("15_cigg7")]
-position = Vector2(1816.25, 60)
+position = Vector2(1933.33, 64)
 
 [node name="decoracoes" type="Node2D" parent="."]
 scale = Vector2(0.4, 0.4)
@@ -276,23 +276,23 @@ texture = ExtResource("9_y7adl")
 flip_h = true
 
 [node name="Poste" type="Sprite2D" parent="decoracoes"]
-position = Vector2(582.5, 142.5)
-scale = Vector2(2.5, 2.5)
+position = Vector2(582.5, 120)
+scale = Vector2(3, 3.5)
 texture = ExtResource("12_8hnfw")
 
 [node name="Poste2" type="Sprite2D" parent="decoracoes"]
-position = Vector2(2237.5, 102.5)
-scale = Vector2(2.5, 2.5)
+position = Vector2(2237.5, 82.5)
+scale = Vector2(3, 3.5)
 texture = ExtResource("12_8hnfw")
 
 [node name="poste" type="Sprite2D" parent="decoracoes"]
-position = Vector2(2997.5, 90)
-scale = Vector2(3, 3)
+position = Vector2(2997.5, 80)
+scale = Vector2(3, 3.5)
 texture = ExtResource("12_8hnfw")
 
 [node name="poste2" type="Sprite2D" parent="decoracoes"]
-position = Vector2(3317.5, 90)
-scale = Vector2(3, 3)
+position = Vector2(3317.5, 80)
+scale = Vector2(3, 3.5)
 texture = ExtResource("12_8hnfw")
 
 [node name="Banco" type="Sprite2D" parent="decoracoes"]
@@ -449,24 +449,24 @@ shape = SubResource("RectangleShape2D_h8yfa")
 position = Vector2(328, 647)
 rotation = 3.14159
 scale = Vector2(4, 4)
-texture_normal = ExtResource("23_ep0ml")
-texture_pressed = ExtResource("24_a14nc")
+texture_normal = ExtResource("23_f7hru")
+texture_pressed = ExtResource("24_4pin5")
 action = "ui_right"
 visibility_mode = 1
 
 [node name="ui_dir" type="TouchScreenButton" parent="mobile"]
 position = Vector2(3, 519)
 scale = Vector2(4, 4)
-texture_normal = ExtResource("23_ep0ml")
-texture_pressed = ExtResource("24_a14nc")
+texture_normal = ExtResource("23_f7hru")
+texture_pressed = ExtResource("24_4pin5")
 action = "ui_left"
 visibility_mode = 1
 
 [node name="ui_pulo" type="TouchScreenButton" parent="mobile"]
 position = Vector2(1024, 520)
 scale = Vector2(4, 4)
-texture_normal = ExtResource("25_kckf4")
-texture_pressed = ExtResource("26_habak")
+texture_normal = ExtResource("25_n7p3g")
+texture_pressed = ExtResource("26_vww1v")
 action = "ui_accept"
 visibility_mode = 1
 

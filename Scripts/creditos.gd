@@ -1,4 +1,10 @@
 extends Control
+@onready var drika = $drika
+@onready var natally = $natally
+@onready var estevao = $estevao
+@onready var fellipe = $fellipe
+@onready var radielen = $radielen
+@onready var endrik = $endrik
 
 func _unhandled_input(event):
 	if event.is_action_pressed("ui_accept"):
@@ -17,3 +23,4 @@ func _on_prosseguir_pressed():
 	ev.action = &"ui_accept"
 	ev.pressed = false
 	Input.parse_input_event(ev)
+

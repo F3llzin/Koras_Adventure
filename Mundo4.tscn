@@ -24,14 +24,14 @@
 [ext_resource type="Texture2D" uid="uid://dakx42taqqmao" path="res://Addons/Free/Artes_jogo/chao_primavera.png" id="22_ca2rw"]
 [ext_resource type="Texture2D" uid="uid://ndrxgnps80no" path="res://Addons/Free/Artes_jogo/nuvem_primavera.png" id="22_opcc3"]
 [ext_resource type="PackedScene" uid="uid://bt5bn0p70du3r" path="res://zona_queda.tscn" id="23_cfkmi"]
+[ext_resource type="Texture2D" uid="uid://c21dn5at16bc6" path="res://Addons/Free/Menu/Buttons/s_n.png" id="25_3uv8i"]
 [ext_resource type="Script" path="res://Scripts/gerenciador_hud.gd" id="25_6kbb4"]
-[ext_resource type="Texture2D" uid="uid://dopgbil0a2x25" path="res://Addons/Free/Menu/Buttons/seta_lado_normal.png" id="25_i7jaq"]
 [ext_resource type="Texture2D" uid="uid://csdf3oeqfnxtf" path="res://Addons/Free/Main Characters/Inimigo Abobora/abobora_pulando.png" id="26_42hv0"]
-[ext_resource type="Texture2D" uid="uid://dcdpk4eti2aca" path="res://Addons/Free/Menu/Buttons/seta_lado_press.png" id="26_kbrcm"]
-[ext_resource type="Texture2D" uid="uid://bp4xaw0mixp5k" path="res://Addons/Free/Menu/Buttons/seta_pulo_normal.png" id="27_m22tg"]
+[ext_resource type="Texture2D" uid="uid://ch1wdkmkjmhx6" path="res://Addons/Free/Menu/Buttons/s_p.png" id="26_mmf2y"]
 [ext_resource type="Texture2D" uid="uid://tfong2ny4dfq" path="res://Addons/Free/Items/Fruits/noz.png" id="27_s0lym"]
+[ext_resource type="Texture2D" uid="uid://b34dlgu6ww52c" path="res://Addons/Free/Menu/Buttons/sp_n.png" id="27_uxnk2"]
 [ext_resource type="Texture2D" uid="uid://b4f1v5d32io3f" path="res://Addons/Free/Menu/Buttons/Other/vida.png" id="28_2s60m"]
-[ext_resource type="Texture2D" uid="uid://d0kk8fpvvnqoc" path="res://Addons/Free/Menu/Buttons/seta_pulo_press.png" id="28_k3swg"]
+[ext_resource type="Texture2D" uid="uid://bd00x3ogbud7c" path="res://Addons/Free/Menu/Buttons/sp_p.png" id="28_c3gvu"]
 [ext_resource type="Theme" uid="uid://cacpanawqld15" path="res://PAUSE.tres" id="29_ajeoj"]
 [ext_resource type="Script" path="res://Scripts/transicao.gd" id="30_5bt0l"]
 [ext_resource type="Shader" path="res://shaders/transicao.gdshader" id="31_6ruo3"]
@@ -653,24 +653,24 @@ shape = SubResource("RectangleShape2D_h8yfa")
 position = Vector2(328, 647)
 rotation = 3.14159
 scale = Vector2(4, 4)
-texture_normal = ExtResource("25_i7jaq")
-texture_pressed = ExtResource("26_kbrcm")
+texture_normal = ExtResource("25_3uv8i")
+texture_pressed = ExtResource("26_mmf2y")
 action = "ui_right"
 visibility_mode = 1
 
 [node name="ui_dir" type="TouchScreenButton" parent="mobile"]
 position = Vector2(3, 519)
 scale = Vector2(4, 4)
-texture_normal = ExtResource("25_i7jaq")
-texture_pressed = ExtResource("26_kbrcm")
+texture_normal = ExtResource("25_3uv8i")
+texture_pressed = ExtResource("26_mmf2y")
 action = "ui_left"
 visibility_mode = 1
 
 [node name="ui_pulo" type="TouchScreenButton" parent="mobile"]
 position = Vector2(1024, 520)
 scale = Vector2(4, 4)
-texture_normal = ExtResource("27_m22tg")
-texture_pressed = ExtResource("28_k3swg")
+texture_normal = ExtResource("27_uxnk2")
+texture_pressed = ExtResource("28_c3gvu")
 action = "ui_accept"
 visibility_mode = 1
 

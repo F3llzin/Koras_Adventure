@@ -1,6 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://bgminpun0q0e8"]
 
 [ext_resource type="Script" path="res://Scripts/creditos.gd" id="1_2ig7w"]
+[ext_resource type="Texture2D" uid="uid://s8q0fhrbcclp" path="res://Addons/Free/Artes_jogo/tela_splash.png" id="2_6jvys"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rnsdb"]
 
@@ -16,144 +17,8 @@ Button/styles/hover = SubResource("StyleBoxEmpty_hn8kt")
 Button/styles/normal = SubResource("StyleBoxEmpty_0k5c2")
 Button/styles/pressed = SubResource("StyleBoxEmpty_1lgyt")
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uu6tt"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_15spf"]
-
 [sub_resource type="Animation" id="Animation_08yi5"]
 length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ColorRect:color")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(0.123109, 0.010861, 0.153093, 1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("MarginContainer/VBoxContainer/creditts:modulate")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("MarginContainer:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(3.5, 0)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("MarginContainer:modulate")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("MarginContainer/VBoxContainer/enter:modulate")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("MarginContainer/VBoxContainer/drika:modulate")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/6/type = "value"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("MarginContainer/VBoxContainer/estevao:modulate")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/7/type = "value"
-tracks/7/imported = false
-tracks/7/enabled = true
-tracks/7/path = NodePath("MarginContainer/VBoxContainer/endrik:modulate")
-tracks/7/interp = 1
-tracks/7/loop_wrap = true
-tracks/7/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/8/type = "value"
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/path = NodePath("MarginContainer/VBoxContainer/fellipe:modulate")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/9/type = "value"
-tracks/9/imported = false
-tracks/9/enabled = true
-tracks/9/path = NodePath("MarginContainer/VBoxContainer/natally:modulate")
-tracks/9/interp = 1
-tracks/9/loop_wrap = true
-tracks/9/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/10/type = "value"
-tracks/10/imported = false
-tracks/10/enabled = true
-tracks/10/path = NodePath("MarginContainer/VBoxContainer/radielen:modulate")
-tracks/10/interp = 1
-tracks/10/loop_wrap = true
-tracks/10/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
 
 [sub_resource type="Animation" id="Animation_jqfkp"]
 resource_name = "fade_in"
@@ -173,7 +38,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("MarginContainer/VBoxContainer/creditts:modulate")
+tracks/1/path = NodePath("creditts:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -221,7 +86,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("MarginContainer/VBoxContainer/drika:modulate")
+tracks/5/path = NodePath("drika:modulate")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -233,7 +98,7 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("MarginContainer/VBoxContainer/estevao:modulate")
+tracks/6/path = NodePath("estevao:modulate")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
@@ -245,7 +110,7 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("MarginContainer/VBoxContainer/endrik:modulate")
+tracks/7/path = NodePath("endrik:modulate")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
@@ -257,7 +122,7 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("MarginContainer/VBoxContainer/fellipe:modulate")
+tracks/8/path = NodePath("fellipe:modulate")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
@@ -269,7 +134,7 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("MarginContainer/VBoxContainer/natally:modulate")
+tracks/9/path = NodePath("natally:modulate")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
@@ -281,7 +146,7 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("MarginContainer/VBoxContainer/radielen:modulate")
+tracks/10/path = NodePath("radielen:modulate")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
@@ -296,6 +161,10 @@ _data = {
 "RESET": SubResource("Animation_08yi5"),
 "fade_in": SubResource("Animation_jqfkp")
 }
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oeq7i"]
+atlas = ExtResource("2_6jvys")
+region = Rect2(0, 282.18, 341, 555.385)
 
 [node name="creditos" type="Control"]
 layout_mode = 3
@@ -325,13 +194,94 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.123109, 0.010861, 0.153093, 1)
 
+[node name="drika" type="Label" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 101.0
+offset_bottom = 136.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 25
+text = "Drika Kelly: Designer 👩‍🎨"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="natally" type="Label" parent="."]
+visible = false
+layout_mode = 2
+offset_left = 2.0
+offset_top = 101.0
+offset_right = 1154.0
+offset_bottom = 136.0
+theme_override_font_sizes/font_size = 25
+text = "Natally: Designer 👩‍🎨"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="estevao" type="Label" parent="."]
+visible = false
+layout_mode = 2
+offset_left = 1.0
+offset_top = 101.0
+offset_right = 1153.0
+offset_bottom = 136.0
+theme_override_font_sizes/font_size = 25
+text = "Estevão: Designer 👨‍🎨"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="fellipe" type="Label" parent="."]
+visible = false
+layout_mode = 2
+offset_left = 3.5
+offset_top = 100.0
+offset_right = 1155.5
+offset_bottom = 135.0
+theme_override_font_sizes/font_size = 25
+text = "Fellipe: Programador 👨‍💻"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="radielen" type="Label" parent="."]
+visible = false
+layout_mode = 2
+offset_left = 3.5
+offset_top = 100.0
+offset_right = 1155.5
+offset_bottom = 135.0
+theme_override_font_sizes/font_size = 25
+text = "Radielen: Scrum-Master 👩‍🏫"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="endrik" type="Label" parent="."]
+visible = false
+layout_mode = 2
+offset_left = 1.0
+offset_top = 100.0
+offset_right = 1153.0
+offset_bottom = 135.0
+theme_override_font_sizes/font_size = 25
+text = "Endrik: Sonorizador 🧏‍♂️"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="creditts" type="Label" parent="."]
+layout_mode = 2
+offset_right = 1152.0
+offset_bottom = 23.0
+text = "CRÉDITOS:"
+horizontal_alignment = 1
+
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 3.5
-offset_right = 3.5
+offset_right = 1155.5
+offset_bottom = 648.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -346,97 +296,15 @@ text = "Aperte em qualquer lugar ou
  \"Enter\" para continuar"
 horizontal_alignment = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-
-[node name="creditts" type="Label" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-text = "CRÉDITOS:"
-horizontal_alignment = 1
-
-[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_constants/separation = 50
-theme_override_styles/separator = SubResource("StyleBoxEmpty_uu6tt")
-
-[node name="drika" type="Label" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-text = "Drika Kelly: Designer 👩‍🎨"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="HSeparator3" type="HSeparator" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_constants/separation = 40
-theme_override_styles/separator = SubResource("StyleBoxEmpty_uu6tt")
-
-[node name="estevao" type="Label" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-text = "Estevão: Designer 👨‍🎨"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="HSeparator4" type="HSeparator" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_constants/separation = 40
-theme_override_styles/separator = SubResource("StyleBoxEmpty_uu6tt")
-
-[node name="endrik" type="Label" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-text = "Endrik: Sonorizador 🧏‍♂️"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="HSeparator5" type="HSeparator" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_constants/separation = 40
-theme_override_styles/separator = SubResource("StyleBoxEmpty_uu6tt")
-
-[node name="fellipe" type="Label" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-text = "Fellipe: Programador 👨‍💻"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="HSeparator6" type="HSeparator" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_constants/separation = 40
-theme_override_styles/separator = SubResource("StyleBoxEmpty_uu6tt")
-
-[node name="natally" type="Label" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-text = "Natally: Designer 👩‍🎨"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="HSeparator7" type="HSeparator" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_constants/separation = 40
-theme_override_styles/separator = SubResource("StyleBoxEmpty_uu6tt")
-
-[node name="radielen" type="Label" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-text = "Radielen: Scrum-Master 👩‍🏫"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="HSeparator2" type="HSeparator" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_constants/separation = 100
-theme_override_styles/separator = SubResource("StyleBoxEmpty_15spf")
-
 [node name="anim" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_chvob")
 }
 autoplay = "fade_in"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(163, 275)
+scale = Vector2(0.5, 0.5)
+texture = SubResource("AtlasTexture_oeq7i")
 
 [connection signal="pressed" from="Canva/Prosseguir" to="." method="_on_prosseguir_pressed"]

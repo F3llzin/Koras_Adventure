@@ -27,15 +27,15 @@
 [ext_resource type="Script" path="res://Scripts/gerenciador_hud.gd" id="22_ldwum"]
 [ext_resource type="Texture2D" uid="uid://cmkh15bb5wb5g" path="res://Addons/Free/Main Characters/Inimigo Urso/Urso_andando.png" id="23_75wdl"]
 [ext_resource type="Texture2D" uid="uid://b4f1v5d32io3f" path="res://Addons/Free/Menu/Buttons/Other/vida.png" id="25_45a6k"]
+[ext_resource type="Texture2D" uid="uid://c21dn5at16bc6" path="res://Addons/Free/Menu/Buttons/s_n.png" id="26_75rn1"]
 [ext_resource type="Script" path="res://Scripts/transicao.gd" id="26_bbq6m"]
-[ext_resource type="Texture2D" uid="uid://dopgbil0a2x25" path="res://Addons/Free/Menu/Buttons/seta_lado_normal.png" id="26_icpeu"]
+[ext_resource type="Texture2D" uid="uid://ch1wdkmkjmhx6" path="res://Addons/Free/Menu/Buttons/s_p.png" id="27_3s7i7"]
 [ext_resource type="Shader" path="res://shaders/transicao.gdshader" id="27_i3j2y"]
-[ext_resource type="Texture2D" uid="uid://dcdpk4eti2aca" path="res://Addons/Free/Menu/Buttons/seta_lado_press.png" id="27_mgapq"]
 [ext_resource type="Script" path="res://Scripts/color.gd" id="28_67tub"]
-[ext_resource type="Texture2D" uid="uid://bp4xaw0mixp5k" path="res://Addons/Free/Menu/Buttons/seta_pulo_normal.png" id="28_bhff0"]
+[ext_resource type="Texture2D" uid="uid://b34dlgu6ww52c" path="res://Addons/Free/Menu/Buttons/sp_n.png" id="28_pjdjp"]
 [ext_resource type="PackedScene" uid="uid://b3545jl6vdnu8" path="res://pause_menu.tscn" id="29_6b7v0"]
+[ext_resource type="Texture2D" uid="uid://bd00x3ogbud7c" path="res://Addons/Free/Menu/Buttons/sp_p.png" id="29_btlmk"]
 [ext_resource type="Texture2D" uid="uid://le2g7em78vs4" path="res://Addons/Free/Items/Fruits/bola_neve_ofc_real.png" id="29_ckl2f"]
-[ext_resource type="Texture2D" uid="uid://d0kk8fpvvnqoc" path="res://Addons/Free/Menu/Buttons/seta_pulo_press.png" id="29_myfas"]
 [ext_resource type="Theme" uid="uid://cacpanawqld15" path="res://PAUSE.tres" id="29_nixwd"]
 [ext_resource type="PackedScene" uid="uid://jpsjrpxyirsq" path="res://coletavel_inverno.tscn" id="31_lxhqo"]
 [ext_resource type="AudioStream" uid="uid://gd8dre4ts8uk" path="res://Addons/Free/Sons/musica_inverno.mp3" id="35_fujop"]
@@ -421,13 +421,13 @@ position = Vector2(2456, -69)
 position = Vector2(2682, -95)
 
 [node name="cherry24" parent="coletaveis" instance=ExtResource("31_lxhqo")]
-position = Vector2(2828, -78)
+position = Vector2(2852, -78)
 
 [node name="cherry25" parent="coletaveis" instance=ExtResource("31_lxhqo")]
-position = Vector2(2899, -78)
+position = Vector2(2926, -78)
 
 [node name="cherry26" parent="coletaveis" instance=ExtResource("31_lxhqo")]
-position = Vector2(2968, -78)
+position = Vector2(3096, -88)
 
 [node name="cherry18" parent="coletaveis" instance=ExtResource("31_lxhqo")]
 position = Vector2(1457, -66)
@@ -440,37 +440,34 @@ scale = Vector2(0.7, 0.7)
 
 [node name="espinhos" type="Node2D" parent="."]
 position = Vector2(117, 4)
+scale = Vector2(0.75, 0.75)
 
 [node name="espinhos_area" parent="espinhos" instance=ExtResource("3_o0uvx")]
-position = Vector2(778, 66)
+position = Vector2(1060, 90.6667)
 scale = Vector2(0.65, 0.65)
 
 [node name="espinhos_area3" parent="espinhos" instance=ExtResource("3_o0uvx")]
-position = Vector2(853, 66)
+position = Vector2(1135, 90.6667)
 scale = Vector2(0.65, 0.65)
 
 [node name="espinhos_area4" parent="espinhos" instance=ExtResource("3_o0uvx")]
-position = Vector2(930, 66)
+position = Vector2(1237.33, 90.6667)
 scale = Vector2(0.65, 0.65)
 
 [node name="espinhos_area5" parent="espinhos" instance=ExtResource("3_o0uvx")]
-position = Vector2(1013, 66)
+position = Vector2(1349.33, 90.6667)
 scale = Vector2(0.65, 0.65)
 
 [node name="espinhos_area2" parent="espinhos" instance=ExtResource("3_o0uvx")]
-position = Vector2(2682, 66)
+position = Vector2(3610.67, 90.6667)
 scale = Vector2(0.65, 0.65)
 
 [node name="espinhos_area6" parent="espinhos" instance=ExtResource("3_o0uvx")]
-position = Vector2(2759, 66)
+position = Vector2(3712, 90.6667)
 scale = Vector2(0.65, 0.65)
 
 [node name="espinhos_area7" parent="espinhos" instance=ExtResource("3_o0uvx")]
-position = Vector2(2828, 66)
-scale = Vector2(0.65, 0.65)
-
-[node name="espinhos_area8" parent="espinhos" instance=ExtResource("3_o0uvx")]
-position = Vector2(2892, 66)
+position = Vector2(3802.67, 90.6667)
 scale = Vector2(0.65, 0.65)
 
 [node name="decoracoes2" type="Node2D" parent="."]
@@ -849,24 +846,24 @@ shape = SubResource("RectangleShape2D_h8yfa")
 position = Vector2(328, 647)
 rotation = 3.14159
 scale = Vector2(4, 4)
-texture_normal = ExtResource("26_icpeu")
-texture_pressed = ExtResource("27_mgapq")
+texture_normal = ExtResource("26_75rn1")
+texture_pressed = ExtResource("27_3s7i7")
 action = "ui_right"
 visibility_mode = 1
 
 [node name="ui_dir" type="TouchScreenButton" parent="mobile"]
 position = Vector2(3, 519)
 scale = Vector2(4, 4)
-texture_normal = ExtResource("26_icpeu")
-texture_pressed = ExtResource("27_mgapq")
+texture_normal = ExtResource("26_75rn1")
+texture_pressed = ExtResource("27_3s7i7")
 action = "ui_left"
 visibility_mode = 1
 
 [node name="ui_pulo" type="TouchScreenButton" parent="mobile"]
 position = Vector2(1024, 520)
 scale = Vector2(4, 4)
-texture_normal = ExtResource("28_bhff0")
-texture_pressed = ExtResource("29_myfas")
+texture_normal = ExtResource("28_pjdjp")
+texture_pressed = ExtResource("29_btlmk")
 action = "ui_accept"
 visibility_mode = 1
 

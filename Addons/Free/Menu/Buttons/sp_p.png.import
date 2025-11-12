@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgmsayoof00hj"
-path="res://.godot/imported/Hit (32x32).png-39e86ac6fc287ca67d71c4869a20e29f.ctex"
+uid="uid://bd00x3ogbud7c"
+path="res://.godot/imported/sp_p.png-a3acd1c00c46e042a5fdac4c2f79f0e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Addons/Free/Main Characters/Ninja Frog/Hit (32x32).png"
-dest_files=["res://.godot/imported/Hit (32x32).png-39e86ac6fc287ca67d71c4869a20e29f.ctex"]
+source_file="res://Addons/Free/Menu/Buttons/sp_p.png"
+dest_files=["res://.godot/imported/sp_p.png-a3acd1c00c46e042a5fdac4c2f79f0e2.ctex"]
 
 [params]
 

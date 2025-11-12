@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://y2dtug27hoej"
-path="res://.godot/imported/Off.png-97896518a673d7b889d23ed67a513891.ctex"
+uid="uid://cfwt7eyuh13u6"
+path="res://.godot/imported/original-small-dark-Kenney.png-eac3a5333de50d0f999c0cee04a87cbf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Addons/Free/Traps/Fire/Off.png"
-dest_files=["res://.godot/imported/Off.png-97896518a673d7b889d23ed67a513891.ctex"]
+source_file="res://Addons/Free/Logo/original-small-dark-Kenney.png"
+dest_files=["res://.godot/imported/original-small-dark-Kenney.png-eac3a5333de50d0f999c0cee04a87cbf.ctex"]
 
 [params]
 

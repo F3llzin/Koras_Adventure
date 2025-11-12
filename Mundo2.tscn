@@ -26,13 +26,13 @@
 [ext_resource type="Texture2D" uid="uid://tfong2ny4dfq" path="res://Addons/Free/Items/Fruits/noz.png" id="21_hh5uc"]
 [ext_resource type="Script" path="res://Scripts/transicao.gd" id="23_1kmm5"]
 [ext_resource type="Texture2D" uid="uid://b4f1v5d32io3f" path="res://Addons/Free/Menu/Buttons/Other/vida.png" id="23_njxoc"]
-[ext_resource type="Texture2D" uid="uid://dopgbil0a2x25" path="res://Addons/Free/Menu/Buttons/seta_lado_normal.png" id="24_kyh03"]
+[ext_resource type="Texture2D" uid="uid://c21dn5at16bc6" path="res://Addons/Free/Menu/Buttons/s_n.png" id="24_iw6c8"]
 [ext_resource type="PackedScene" uid="uid://b3545jl6vdnu8" path="res://pause_menu.tscn" id="24_mku6t"]
 [ext_resource type="Shader" path="res://shaders/transicao.gdshader" id="24_whxtc"]
-[ext_resource type="Texture2D" uid="uid://dcdpk4eti2aca" path="res://Addons/Free/Menu/Buttons/seta_lado_press.png" id="25_5b0f2"]
+[ext_resource type="Texture2D" uid="uid://ch1wdkmkjmhx6" path="res://Addons/Free/Menu/Buttons/s_p.png" id="25_kikyd"]
 [ext_resource type="Script" path="res://Scripts/color.gd" id="25_rb68b"]
-[ext_resource type="Texture2D" uid="uid://bp4xaw0mixp5k" path="res://Addons/Free/Menu/Buttons/seta_pulo_normal.png" id="26_6gq8w"]
-[ext_resource type="Texture2D" uid="uid://d0kk8fpvvnqoc" path="res://Addons/Free/Menu/Buttons/seta_pulo_press.png" id="27_2aipt"]
+[ext_resource type="Texture2D" uid="uid://b34dlgu6ww52c" path="res://Addons/Free/Menu/Buttons/sp_n.png" id="26_pibe3"]
+[ext_resource type="Texture2D" uid="uid://bd00x3ogbud7c" path="res://Addons/Free/Menu/Buttons/sp_p.png" id="27_pt12c"]
 [ext_resource type="PackedScene" uid="uid://d0p8x1lammvn0" path="res://falling_plataform.tscn" id="31_8gkyi"]
 [ext_resource type="PackedScene" uid="uid://6nmpv7lm4nij" path="res://chegada.tscn" id="31_cfk2l"]
 [ext_resource type="Theme" uid="uid://cacpanawqld15" path="res://PAUSE.tres" id="31_ddpkv"]
@@ -256,18 +256,19 @@ scale = Vector2(0.7, 0.7)
 
 [node name="espinhos" type="Node2D" parent="."]
 position = Vector2(117, 1)
+scale = Vector2(0.75, 0.75)
 
 [node name="espinhos_area" parent="espinhos" instance=ExtResource("2_q6egm")]
-position = Vector2(164, 53)
+position = Vector2(217.333, 73.3333)
 
 [node name="espinhos_area3" parent="espinhos" instance=ExtResource("2_q6egm")]
-position = Vector2(307, 53)
+position = Vector2(408, 73.3333)
 
 [node name="espinhos_area2" parent="espinhos" instance=ExtResource("2_q6egm")]
-position = Vector2(780, 69)
+position = Vector2(1038.67, 94.6667)
 
 [node name="espinhos_area4" parent="espinhos" instance=ExtResource("2_q6egm")]
-position = Vector2(1622, 69)
+position = Vector2(2164, 93.3333)
 
 [node name="decoracoes2" type="Node2D" parent="."]
 position = Vector2(-1, -89)
@@ -553,24 +554,24 @@ shape = SubResource("RectangleShape2D_h8yfa")
 position = Vector2(328, 647)
 rotation = 3.14159
 scale = Vector2(4, 4)
-texture_normal = ExtResource("24_kyh03")
-texture_pressed = ExtResource("25_5b0f2")
+texture_normal = ExtResource("24_iw6c8")
+texture_pressed = ExtResource("25_kikyd")
 action = "ui_right"
 visibility_mode = 1
 
 [node name="ui_dir" type="TouchScreenButton" parent="mobile"]
 position = Vector2(3, 519)
 scale = Vector2(4, 4)
-texture_normal = ExtResource("24_kyh03")
-texture_pressed = ExtResource("25_5b0f2")
+texture_normal = ExtResource("24_iw6c8")
+texture_pressed = ExtResource("25_kikyd")
 action = "ui_left"
 visibility_mode = 1
 
 [node name="ui_pulo" type="TouchScreenButton" parent="mobile"]
 position = Vector2(1024, 520)
 scale = Vector2(4, 4)
-texture_normal = ExtResource("26_6gq8w")
-texture_pressed = ExtResource("27_2aipt")
+texture_normal = ExtResource("26_pibe3")
+texture_pressed = ExtResource("27_pt12c")
 action = "ui_accept"
 visibility_mode = 1
 

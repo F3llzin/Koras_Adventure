@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dajid1i8bb7n5"
-path="res://.godot/imported/Fall (32x32).png-7e334aabbd75f979faba7c3e3a1e05ab.ctex"
+uid="uid://b34dlgu6ww52c"
+path="res://.godot/imported/sp_n.png-5ffa448c802c87a360d7ee8154acf057.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Addons/Free/Main Characters/Ninja Frog/Fall (32x32).png"
-dest_files=["res://.godot/imported/Fall (32x32).png-7e334aabbd75f979faba7c3e3a1e05ab.ctex"]
+source_file="res://Addons/Free/Menu/Buttons/sp_n.png"
+dest_files=["res://.godot/imported/sp_n.png-5ffa448c802c87a360d7ee8154acf057.ctex"]
 
 [params]
 
