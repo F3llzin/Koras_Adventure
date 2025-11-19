@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bgminpun0q0e8"]
+[gd_scene load_steps=17 format=3 uid="uid://bgminpun0q0e8"]
 
 [ext_resource type="Script" path="res://Scripts/creditos.gd" id="1_2ig7w"]
 [ext_resource type="Texture2D" uid="uid://s8q0fhrbcclp" path="res://Addons/Free/Artes_jogo/tela_splash.png" id="2_6jvys"]
@@ -19,10 +19,82 @@ Button/styles/pressed = SubResource("StyleBoxEmpty_1lgyt")
 
 [sub_resource type="Animation" id="Animation_08yi5"]
 length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite_drika:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite_natally:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite_estevao:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Sprite_fellipe:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Sprite_radielen:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Sprite_endryk:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_jqfkp"]
 resource_name = "fade_in"
-length = 4.0
+length = 6.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -42,7 +114,7 @@ tracks/1/path = NodePath("creditts:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0.4, 0.6),
+"times": PackedFloat32Array(0.7, 1.1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -54,7 +126,7 @@ tracks/2/path = NodePath("MarginContainer:position")
 tracks/2/interp = 2
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0.3, 0.6),
+"times": PackedFloat32Array(4.4, 4.7),
 "transitions": PackedFloat32Array(0.57435, 1),
 "update": 0,
 "values": [Vector2(-100, 0), Vector2(0, 0)]
@@ -66,7 +138,7 @@ tracks/3/path = NodePath("MarginContainer:modulate")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0.2, 0.4),
+"times": PackedFloat32Array(5.3, 5.9),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -74,23 +146,23 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("MarginContainer/VBoxContainer/enter:modulate")
+tracks/4/path = NodePath("drika:modulate")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(3.2, 3.6),
-"transitions": PackedFloat32Array(0.732043, 1),
+"times": PackedFloat32Array(2, 2.4),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("drika:modulate")
+tracks/5/path = NodePath("estevao:modulate")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(0.9, 1.3),
+"times": PackedFloat32Array(3.3, 3.7),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -98,11 +170,11 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("estevao:modulate")
+tracks/6/path = NodePath("endrik:modulate")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"times": PackedFloat32Array(1, 1.4),
+"times": PackedFloat32Array(5.1, 5.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -110,11 +182,11 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("endrik:modulate")
+tracks/7/path = NodePath("fellipe:modulate")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(1.1, 1.5),
+"times": PackedFloat32Array(3.8, 4.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -122,11 +194,11 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("fellipe:modulate")
+tracks/8/path = NodePath("natally:modulate")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
-"times": PackedFloat32Array(1.2, 1.6),
+"times": PackedFloat32Array(2.6, 3),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -134,11 +206,11 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("natally:modulate")
+tracks/9/path = NodePath("radielen:modulate")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
-"times": PackedFloat32Array(1.3, 1.7),
+"times": PackedFloat32Array(4.3, 4.7),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -146,11 +218,71 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("radielen:modulate")
+tracks/10/path = NodePath("Sprite_drika:modulate")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
-"times": PackedFloat32Array(1.4, 1.8),
+"times": PackedFloat32Array(1.8, 2.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Sprite_natally:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(2.3, 2.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Sprite_estevao:modulate")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(2.8, 3.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Sprite_fellipe:modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(3.5, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Sprite_radielen:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(4, 4.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Sprite_endryk:modulate")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(4.5, 5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -164,7 +296,27 @@ _data = {
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oeq7i"]
 atlas = ExtResource("2_6jvys")
-region = Rect2(0, 282.18, 341, 555.385)
+region = Rect2(0, 288, 320, 552)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vpd4j"]
+atlas = ExtResource("2_6jvys")
+region = Rect2(336, 280, 352, 552)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jldc2"]
+atlas = ExtResource("2_6jvys")
+region = Rect2(696, 288, 304, 536)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c0w0k"]
+atlas = ExtResource("2_6jvys")
+region = Rect2(1008, 280, 296, 552)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pba1k"]
+atlas = ExtResource("2_6jvys")
+region = Rect2(1312, 288, 320, 528)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_84ai5"]
+atlas = ExtResource("2_6jvys")
+region = Rect2(1640, 272, 272, 560)
 
 [node name="creditos" type="Control"]
 layout_mode = 3
@@ -195,12 +347,14 @@ grow_vertical = 2
 color = Color(0.123109, 0.010861, 0.153093, 1)
 
 [node name="drika" type="Label" parent="."]
-visible = false
+modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_top = 101.0
-offset_bottom = 136.0
+offset_left = -241.0
+offset_top = 211.0
+offset_right = -241.0
+offset_bottom = 246.0
 grow_horizontal = 2
 theme_override_font_sizes/font_size = 25
 text = "Drika Kelly: Designer 👩‍🎨"
@@ -208,66 +362,67 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="natally" type="Label" parent="."]
-visible = false
+modulate = Color(1, 1, 1, 0)
 layout_mode = 2
-offset_left = 2.0
-offset_top = 101.0
-offset_right = 1154.0
-offset_bottom = 136.0
+offset_left = -265.0
+offset_top = 413.0
+offset_right = 887.0
+offset_bottom = 448.0
 theme_override_font_sizes/font_size = 25
 text = "Natally: Designer 👩‍🎨"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="estevao" type="Label" parent="."]
-visible = false
+modulate = Color(1, 1, 1, 0)
 layout_mode = 2
-offset_left = 1.0
-offset_top = 101.0
-offset_right = 1153.0
-offset_bottom = 136.0
+offset_left = -259.0
+offset_top = 601.0
+offset_right = 893.0
+offset_bottom = 636.0
 theme_override_font_sizes/font_size = 25
 text = "Estevão: Designer 👨‍🎨"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="fellipe" type="Label" parent="."]
-visible = false
+modulate = Color(1, 1, 1, 0)
 layout_mode = 2
-offset_left = 3.5
-offset_top = 100.0
-offset_right = 1155.5
-offset_bottom = 135.0
+offset_left = 322.0
+offset_top = 210.0
+offset_right = 1474.0
+offset_bottom = 245.0
 theme_override_font_sizes/font_size = 25
 text = "Fellipe: Programador 👨‍💻"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="radielen" type="Label" parent="."]
-visible = false
+modulate = Color(1, 1, 1, 0)
 layout_mode = 2
-offset_left = 3.5
-offset_top = 100.0
-offset_right = 1155.5
-offset_bottom = 135.0
+offset_left = 338.0
+offset_top = 416.0
+offset_right = 1490.0
+offset_bottom = 451.0
 theme_override_font_sizes/font_size = 25
 text = "Radielen: Scrum-Master 👩‍🏫"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="endrik" type="Label" parent="."]
-visible = false
+modulate = Color(1, 1, 1, 0)
 layout_mode = 2
-offset_left = 1.0
-offset_top = 100.0
-offset_right = 1153.0
-offset_bottom = 135.0
+offset_left = 320.0
+offset_top = 602.0
+offset_right = 1472.0
+offset_bottom = 637.0
 theme_override_font_sizes/font_size = 25
 text = "Endrik: Sonorizador 🧏‍♂️"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="creditts" type="Label" parent="."]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 offset_right = 1152.0
 offset_bottom = 23.0
@@ -275,19 +430,17 @@ text = "CRÉDITOS:"
 horizontal_alignment = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 3.5
-offset_right = 1155.5
-offset_bottom = 648.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
-size_flags_vertical = 8
+size_flags_vertical = 0
 
 [node name="enter" type="Label" parent="MarginContainer/VBoxContainer2"]
 layout_mode = 2
@@ -302,9 +455,34 @@ libraries = {
 }
 autoplay = "fade_in"
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(163, 275)
-scale = Vector2(0.5, 0.5)
+[node name="Sprite_drika" type="Sprite2D" parent="."]
+position = Vector2(119, 160)
+scale = Vector2(0.3, 0.3)
 texture = SubResource("AtlasTexture_oeq7i")
+
+[node name="Sprite_natally" type="Sprite2D" parent="."]
+position = Vector2(119, 365)
+scale = Vector2(0.3, 0.3)
+texture = SubResource("AtlasTexture_vpd4j")
+
+[node name="Sprite_estevao" type="Sprite2D" parent="."]
+position = Vector2(119, 553)
+scale = Vector2(0.3, 0.3)
+texture = SubResource("AtlasTexture_jldc2")
+
+[node name="Sprite_fellipe" type="Sprite2D" parent="."]
+position = Vector2(659, 160)
+scale = Vector2(0.3, 0.3)
+texture = SubResource("AtlasTexture_c0w0k")
+
+[node name="Sprite_radielen" type="Sprite2D" parent="."]
+position = Vector2(659, 365)
+scale = Vector2(0.3, 0.3)
+texture = SubResource("AtlasTexture_pba1k")
+
+[node name="Sprite_endryk" type="Sprite2D" parent="."]
+position = Vector2(659, 553)
+scale = Vector2(0.3, 0.3)
+texture = SubResource("AtlasTexture_84ai5")
 
 [connection signal="pressed" from="Canva/Prosseguir" to="." method="_on_prosseguir_pressed"]

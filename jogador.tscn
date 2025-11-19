@@ -1,30 +1,42 @@
-[gd_scene load_steps=22 format=3 uid="uid://bh7sntndx4xcr"]
+[gd_scene load_steps=25 format=3 uid="uid://bh7sntndx4xcr"]
 
 [ext_resource type="Script" path="res://Scripts/jogador.gd" id="1_njupl"]
-[ext_resource type="Texture2D" uid="uid://c31mn2mk2af1c" path="res://Addons/Free/Main Characters/Protagonista/kora_hit.png" id="2_6gb2j"]
-[ext_resource type="Texture2D" uid="uid://cgew8h87h5egy" path="res://Addons/Free/Main Characters/Protagonista/Kora.png" id="3_3g658"]
+[ext_resource type="Texture2D" uid="uid://cxae527n4bgit" path="res://Addons/Free/Main Characters/Protagonista/Kora_hiting.png" id="2_ahmxo"]
 [ext_resource type="AudioStream" uid="uid://d31rceqv1j2lt" path="res://Addons/Free/Sons/jump.mp3" id="3_fcgm3"]
+[ext_resource type="Texture2D" uid="uid://c2f5h84od34ot" path="res://Addons/Free/Main Characters/Protagonista/Kora_idle.png" id="3_xbtbf"]
 [ext_resource type="Texture2D" uid="uid://bbmmwip4wydwu" path="res://Addons/Free/Main Characters/Protagonista/kora_pulo.png" id="4_8vbxo"]
-[ext_resource type="Texture2D" uid="uid://b3cmwh5vdspk" path="res://Addons/Free/Main Characters/Protagonista/Kora_andando.png" id="5_gpvit"]
+[ext_resource type="Texture2D" uid="uid://b3cmwh5vdspk" path="res://Addons/Free/Main Characters/Protagonista/kora_andando.png" id="5_gpvit"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k8noo"]
-size = Vector2(18, 23)
+size = Vector2(18, 28.75)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_s2qka"]
-atlas = ExtResource("2_6gb2j")
-region = Rect2(0, 0, 32, 32)
+[sub_resource type="AtlasTexture" id="AtlasTexture_qvfnj"]
+atlas = ExtResource("2_ahmxo")
+region = Rect2(0, 0, 21, 38)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_2jfah"]
-atlas = ExtResource("2_6gb2j")
-region = Rect2(32, 0, 32, 32)
+[sub_resource type="AtlasTexture" id="AtlasTexture_hr2bx"]
+atlas = ExtResource("2_ahmxo")
+region = Rect2(21, 0, 21, 38)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_h6ll0"]
-atlas = ExtResource("2_6gb2j")
-region = Rect2(64, 0, 32, 32)
+[sub_resource type="AtlasTexture" id="AtlasTexture_37vxl"]
+atlas = ExtResource("2_ahmxo")
+region = Rect2(42, 0, 21, 38)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_wk8ot"]
-atlas = ExtResource("3_3g658")
-region = Rect2(0, 0, 32, 38)
+[sub_resource type="AtlasTexture" id="AtlasTexture_1dbin"]
+atlas = ExtResource("3_xbtbf")
+region = Rect2(0, 0, 21, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k58uw"]
+atlas = ExtResource("3_xbtbf")
+region = Rect2(21, 0, 21, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bgmvu"]
+atlas = ExtResource("3_xbtbf")
+region = Rect2(42, 0, 21, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d1bkl"]
+atlas = ExtResource("3_xbtbf")
+region = Rect2(63, 0, 21, 38)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yug2n"]
 atlas = ExtResource("4_8vbxo")
@@ -58,13 +70,13 @@ region = Rect2(63, 0, 21, 38)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_s2qka")
+"texture": SubResource("AtlasTexture_qvfnj")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_2jfah")
+"texture": SubResource("AtlasTexture_hr2bx")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_h6ll0")
+"texture": SubResource("AtlasTexture_37vxl")
 }],
 "loop": true,
 "name": &"hurt",
@@ -72,7 +84,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_wk8ot")
+"texture": SubResource("AtlasTexture_1dbin")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k58uw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bgmvu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bkl")
 }],
 "loop": true,
 "name": &"idle",
@@ -111,23 +132,24 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7iumc"]
-size = Vector2(23, 16)
+size = Vector2(20, 27.75)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eu4es"]
 size = Vector2(18, 5)
 
 [node name="jogador" type="CharacterBody2D"]
+position = Vector2(0, -15)
+scale = Vector2(0.7, 0.8)
 collision_mask = 86
 script = ExtResource("1_njupl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 1.5)
+position = Vector2(0, 4.375)
 shape = SubResource("RectangleShape2D_k8noo")
 
 [node name="anim" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.7, 0.8)
 sprite_frames = SubResource("SpriteFrames_h7ry2")
-animation = &"run"
+animation = &"hurt"
 autoplay = "idle"
 
 [node name="animação" type="AnimationPlayer" parent="."]
@@ -137,7 +159,7 @@ collision_layer = 0
 collision_mask = 4
 
 [node name="colision" type="CollisionShape2D" parent="HurtBox"]
-position = Vector2(-0.5, -1)
+position = Vector2(0, 4.875)
 shape = SubResource("RectangleShape2D_7iumc")
 debug_color = Color(0.960784, 0, 0.52549, 0.419608)
 

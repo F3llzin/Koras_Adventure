@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3cmwh5vdspk"
-path="res://.godot/imported/kora_andando.png-fa76f778a696941d5bf191a7283670d7.ctex"
+uid="uid://c2f5h84od34ot"
+path="res://.godot/imported/Kora_idle.png-c8b6145e2697a6a1c71fd13b1f7e7227.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Addons/Free/Main Characters/Protagonista/kora_andando.png"
-dest_files=["res://.godot/imported/kora_andando.png-fa76f778a696941d5bf191a7283670d7.ctex"]
+source_file="res://Addons/Free/Main Characters/Protagonista/Kora_idle.png"
+dest_files=["res://.godot/imported/Kora_idle.png-c8b6145e2697a6a1c71fd13b1f7e7227.ctex"]
 
 [params]
 

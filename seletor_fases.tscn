@@ -21,9 +21,9 @@ expand_mode = 5
 
 [node name="fase_btn" parent="." instance=ExtResource("1_bcumk")]
 layout_mode = 0
-offset_left = 234.0
+offset_left = 815.0
 offset_top = 168.0
-offset_right = 242.0
+offset_right = 823.0
 offset_bottom = 176.0
 tranca = false
 nome_fase = "res://Mundo.tscn"
@@ -31,12 +31,13 @@ nmr_fase = "1"
 
 [node name="fase_btn2" parent="." instance=ExtResource("1_bcumk")]
 layout_mode = 0
-offset_left = 815.0
-offset_top = 168.0
-offset_right = 823.0
-offset_bottom = 176.0
-nome_fase = "res://Mundo2.tscn"
+offset_left = 774.0
+offset_top = 481.0
+offset_right = 782.0
+offset_bottom = 489.0
+nome_fase = "res://Mundo3.tscn"
 nmr_fase = "2"
+fase_bloqueio = 1
 
 [node name="fase_btn3" parent="." instance=ExtResource("1_bcumk")]
 layout_mode = 0
@@ -46,14 +47,14 @@ offset_right = 286.0
 offset_bottom = 474.0
 nome_fase = "res://Mundo3.tscn"
 nmr_fase = "3"
-fase_bloqueio = 1
+fase_bloqueio = 2
 
 [node name="fase_btn4" parent="." instance=ExtResource("1_bcumk")]
 layout_mode = 0
-offset_left = 774.0
-offset_top = 481.0
-offset_right = 782.0
-offset_bottom = 489.0
+offset_left = 234.0
+offset_top = 168.0
+offset_right = 242.0
+offset_bottom = 176.0
 nome_fase = "res://Mundo4.tscn"
 nmr_fase = "4"
-fase_bloqueio = 2
+fase_bloqueio = 3

@@ -86,7 +86,7 @@ func seguir_camera(camera_2d):
 	var caminho_camera = camera_2d.get_path()
 	remote_transform.remote_path = caminho_camera
 	
-func tomar_dano(knockback_force = Vector2.ZERO, duration = 0.25):
+func tomar_dano(knockback_force = Vector2.ZERO, duration = 0.3):
 	if Global.vida_jogador > 0:
 		Global.vida_jogador -= 1
 	else:
@@ -101,7 +101,7 @@ func tomar_dano(knockback_force = Vector2.ZERO, duration = 0.25):
 		knockback_tween.parallel().tween_property(animation, "modulate", Color(1,1,1,1), duration)
 		
 	is_hurted = true
-	await get_tree().create_timer(.3).timeout
+	await get_tree().create_timer(0.3).timeout
 	is_hurted = false
 		
 func _set_state():

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3cmwh5vdspk"
-path="res://.godot/imported/kora_andando.png-fa76f778a696941d5bf191a7283670d7.ctex"
+uid="uid://cxae527n4bgit"
+path="res://.godot/imported/Kora_hiting.png-ada545d001552bb89c683ae1f358e913.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Addons/Free/Main Characters/Protagonista/kora_andando.png"
-dest_files=["res://.godot/imported/kora_andando.png-fa76f778a696941d5bf191a7283670d7.ctex"]
+source_file="res://Addons/Free/Main Characters/Protagonista/Kora_hiting.png"
+dest_files=["res://.godot/imported/Kora_hiting.png-ada545d001552bb89c683ae1f358e913.ctex"]
 
 [params]
 
