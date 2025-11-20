@@ -583,4 +583,74 @@ volume_db = -10.0
 pitch_scale = 0.9
 autoplay = true
 
+[node name="Instrucoes" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 68.0
+offset_top = -86.0
+offset_right = 108.0
+offset_bottom = -46.0
+
+[node name="andar" type="Label" parent="Instrucoes"]
+offset_right = 572.0
+offset_bottom = 42.0
+scale = Vector2(0.5, 0.5)
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Ande para direita e para esquerda com:"
+horizontal_alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Instrucoes"]
+offset_left = 68.0
+offset_top = 12.0
+offset_right = 793.0
+offset_bottom = 46.0
+scale = Vector2(0.28, 0.28)
+size_flags_horizontal = 4
+
+[node name="andar" type="Label" parent="Instrucoes/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = " \"←\", \"→\", respectivamente."
+
+[node name="VSeparator2" type="VSeparator" parent="Instrucoes/HBoxContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 40
+
+[node name="ou" type="Label" parent="Instrucoes/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "ou"
+
+[node name="VSeparator" type="VSeparator" parent="Instrucoes/HBoxContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 40
+
+[node name="andar2" type="Label" parent="Instrucoes/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "\"a\", \"d\", respectivamente."
+
+[node name="pular" type="Label" parent="Instrucoes"]
+offset_left = 81.0
+offset_top = 78.0
+offset_right = 339.0
+offset_bottom = 101.0
+scale = Vector2(0.5, 0.5)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Para pular use a barra de espaço."
+
+[node name="pausar" type="Label" parent="Instrucoes"]
+offset_left = 66.0
+offset_top = 38.0
+offset_right = 384.0
+offset_bottom = 61.0
+scale = Vector2(0.5, 0.5)
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Para pausar use a tecla  \"Esc\" ou o botão."
+
 [connection signal="pressed" from="pause_bttn/Pause_bttn" to="." method="_on_button_pressed"]

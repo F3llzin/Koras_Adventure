@@ -1,0 +1,145 @@
+[gd_scene load_steps=9 format=3 uid="uid://cjce1tempefu0"]
+
+[ext_resource type="Texture2D" uid="uid://demmna7hhek8n" path="res://Addons/Free/Artes_jogo/cabrito.png" id="1_go5di"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5qfid"]
+atlas = ExtResource("1_go5di")
+region = Rect2(0, 0, 30, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v8ifv"]
+atlas = ExtResource("1_go5di")
+region = Rect2(30, 0, 30, 40)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ujh1d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5qfid")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v8ifv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Curve2D" id="Curve2D_eashc"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 159, 0)
+}
+point_count = 2
+
+[sub_resource type="Animation" id="Animation_0j7a1"]
+resource_name = "main"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Path2D/PathFollow2D:h_offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Path2D/PathFollow2D:progress_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Cabrito_anim:flip_h")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="Animation" id="Animation_ryyu1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Path2D/PathFollow2D:h_offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Path2D/PathFollow2D:progress_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Cabrito_anim:flip_h")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_42f64"]
+_data = {
+"RESET": SubResource("Animation_ryyu1"),
+"main": SubResource("Animation_0j7a1")
+}
+
+[node name="Cabrito" type="Node2D"]
+
+[node name="Cabrito_anim" type="AnimatedSprite2D" parent="."]
+position = Vector2(86.9254, 0.543224)
+rotation = -0.00628923
+sprite_frames = SubResource("SpriteFrames_ujh1d")
+autoplay = "default"
+frame_progress = 0.815081
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_eashc")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2(86.9191, -0.456756)
+progress = 86.3767
+rotates = false
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
+position = Vector2(0.00628918, 0.99998)
+rotation = -0.00628923
+remote_path = NodePath("../../../Cabrito_anim")
+
+[node name="Anim" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_42f64")
+}
+autoplay = "main"
+speed_scale = 0.5

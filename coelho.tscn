@@ -1,0 +1,179 @@
+[gd_scene load_steps=11 format=3 uid="uid://dqnmjic0vj527"]
+
+[ext_resource type="Texture2D" uid="uid://daoldrqsypf24" path="res://Addons/Free/Artes_jogo/coelho_dec.png" id="1_cmeom"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wgk1v"]
+atlas = ExtResource("1_cmeom")
+region = Rect2(0, 0, 20, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t3s60"]
+atlas = ExtResource("1_cmeom")
+region = Rect2(20, 0, 20, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_whfp8"]
+atlas = ExtResource("1_cmeom")
+region = Rect2(40, 0, 20, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d0j4p"]
+atlas = ExtResource("1_cmeom")
+region = Rect2(60, 0, 20, 40)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hg0k5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wgk1v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t3s60")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_whfp8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d0j4p")
+}],
+"loop": true,
+"name": &"default",
+"speed": 0.1
+}]
+
+[sub_resource type="Curve2D" id="Curve2D_qwjyb"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 1, 8, -39.6875, 2.20486, 39.6875, -2.20486, 47, -16, 0, 0, 0, 0, 98, 8)
+}
+point_count = 3
+
+[sub_resource type="Animation" id="Animation_j0oj1"]
+resource_name = "main"
+length = 2.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Path2D/PathFollow2D:progress_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 1.2, 2),
+"transitions": PackedFloat32Array(1, 0.137773, 1, 0.137),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Coelho_Anim:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.1, 2.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Coelho_Anim:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.6, 1, 1.3, 1.7, 1.9, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 0, 1, 2, 3, 0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Path2D/PathFollow2D:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_p8gie"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Path2D/PathFollow2D:progress_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Coelho_Anim:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Coelho_Anim:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Path2D/PathFollow2D:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.472122]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jmwl6"]
+_data = {
+"RESET": SubResource("Animation_p8gie"),
+"main": SubResource("Animation_j0oj1")
+}
+
+[node name="Coelho" type="Node2D"]
+
+[node name="Coelho_Anim" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, 8)
+rotation = -0.480887
+scale = Vector2(1, 1)
+sprite_frames = SubResource("SpriteFrames_hg0k5")
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_qwjyb")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2(1, 8)
+rotation = -0.472122
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
+remote_path = NodePath("../../../Coelho_Anim")
+
+[node name="Anim" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_jmwl6")
+}
+autoplay = "main"

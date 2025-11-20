@@ -1,4 +1,4 @@
-[gd_scene load_steps=81 format=3 uid="uid://b7bo1mbv88o0e"]
+[gd_scene load_steps=73 format=3 uid="uid://b7bo1mbv88o0e"]
 
 [ext_resource type="Script" path="res://scripts/Mundo.gd" id="1_rjm86"]
 [ext_resource type="PackedScene" uid="uid://i41ow4yunci3" path="res://coletavel_primavera.tscn" id="2_y3ixv"]
@@ -33,12 +33,12 @@
 [ext_resource type="PackedScene" uid="uid://b3545jl6vdnu8" path="res://pause_menu.tscn" id="33_f4owe"]
 [ext_resource type="AudioStream" uid="uid://co7qk0q6cvpdt" path="res://Addons/Free/Sons/musica_outono.mp3" id="34_cpn0m"]
 [ext_resource type="PackedScene" uid="uid://dcie1hk7syhqi" path="res://final_jogo.tscn" id="35_gwbrs"]
-[ext_resource type="Texture2D" uid="uid://demmna7hhek8n" path="res://Addons/Free/Artes_jogo/cabrito.png" id="41_vurln"]
 [ext_resource type="PackedScene" uid="uid://c3qj5a0124gj6" path="res://falling_plataform_prim.tscn" id="42_4di5w"]
 [ext_resource type="Texture2D" uid="uid://brto87g6bomaw" path="res://Addons/Free/Artes_jogo/casa_arvore.png" id="42_nrh3v"]
 [ext_resource type="Texture2D" uid="uid://cqrv586l1ulrg" path="res://Addons/Free/Artes_jogo/cerca.png" id="43_0b70h"]
-[ext_resource type="Texture2D" uid="uid://daoldrqsypf24" path="res://Addons/Free/Artes_jogo/coelho_dec.png" id="44_kvocc"]
 [ext_resource type="Texture2D" uid="uid://dj53lnv10oq0m" path="res://Addons/Free/Artes_jogo/girassol_flor.png" id="45_m8m4i"]
+[ext_resource type="PackedScene" uid="uid://cjce1tempefu0" path="res://cabrito.tscn" id="45_v32cm"]
+[ext_resource type="PackedScene" uid="uid://dqnmjic0vj527" path="res://coelho.tscn" id="46_8yku3"]
 [ext_resource type="Texture2D" uid="uid://dm4kqo7sg3l2j" path="res://Addons/Free/Artes_jogo/lavanda.png" id="46_rgtwm"]
 [ext_resource type="Texture2D" uid="uid://cfqxjf5crkuuc" path="res://Addons/Free/Artes_jogo/placa_prim.png" id="47_qi2wv"]
 [ext_resource type="Texture2D" uid="uid://dcgp27808tbwa" path="res://Addons/Free/Artes_jogo/poste_primavera.png" id="48_g2cp3"]
@@ -363,64 +363,6 @@ shader_parameter/threshold = 0.0
 shader_parameter/line_color_a = Color(1, 1, 1, 1)
 shader_parameter/line_color_b = Color(0, 0, 0, 1)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_5qfid"]
-atlas = ExtResource("41_vurln")
-region = Rect2(0, 0, 30, 40)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_v8ifv"]
-atlas = ExtResource("41_vurln")
-region = Rect2(30, 0, 30, 40)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_vo8tx"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5qfid")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_v8ifv")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wgk1v"]
-atlas = ExtResource("44_kvocc")
-region = Rect2(0, 0, 20, 40)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_t3s60"]
-atlas = ExtResource("44_kvocc")
-region = Rect2(20, 0, 20, 40)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_whfp8"]
-atlas = ExtResource("44_kvocc")
-region = Rect2(40, 0, 20, 40)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_d0j4p"]
-atlas = ExtResource("44_kvocc")
-region = Rect2(60, 0, 20, 40)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_s2nuh"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wgk1v")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_t3s60")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_whfp8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_d0j4p")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_rjm86")
 
@@ -720,6 +662,29 @@ texture = ExtResource("50_6hs1j")
 
 [node name="Enemy" parent="inimigos" instance=ExtResource("15_a2qjj")]
 position = Vector2(805, 82)
+
+[node name="personagens_Anim" type="Node2D" parent="."]
+position = Vector2(1413, 53)
+scale = Vector2(0.7, 0.7)
+
+[node name="Cabrito" parent="personagens_Anim" instance=ExtResource("45_v32cm")]
+scale = Vector2(1, 1)
+
+[node name="Coelho" parent="personagens_Anim" instance=ExtResource("46_8yku3")]
+position = Vector2(477.143, 0)
+scale = Vector2(0.714286, 0.714286)
+
+[node name="Coelho2" parent="personagens_Anim" instance=ExtResource("46_8yku3")]
+position = Vector2(518.572, 0)
+scale = Vector2(0.714286, 0.714286)
+
+[node name="Coelho3" parent="personagens_Anim" instance=ExtResource("46_8yku3")]
+position = Vector2(1055.71, 0)
+scale = Vector2(0.714286, 0.714286)
+
+[node name="Coelho4" parent="personagens_Anim" instance=ExtResource("46_8yku3")]
+position = Vector2(1691.43, 0)
+scale = Vector2(0.714286, 0.714286)
 
 [node name="jogador" parent="." instance=ExtResource("16_1prhp")]
 position = Vector2(145, 63)
@@ -1049,34 +1014,5 @@ position = Vector2(249, 25)
 position = Vector2(322, 25)
 
 [node name="falling_plataform2" parent="plataforma_cai/Falling_plataform5" instance=ExtResource("42_4di5w")]
-
-[node name="Cabrito" type="AnimatedSprite2D" parent="."]
-position = Vector2(1444, 55)
-scale = Vector2(0.6, 0.6)
-sprite_frames = SubResource("SpriteFrames_vo8tx")
-autoplay = "default"
-frame_progress = 0.515229
-
-[node name="Coelho" type="AnimatedSprite2D" parent="."]
-position = Vector2(1747, 57)
-scale = Vector2(0.5, 0.5)
-sprite_frames = SubResource("SpriteFrames_s2nuh")
-autoplay = "default"
-frame_progress = 0.0681335
-
-[node name="Coelho2" type="AnimatedSprite2D" parent="."]
-position = Vector2(1762, 57)
-scale = Vector2(0.5, 0.5)
-sprite_frames = SubResource("SpriteFrames_s2nuh")
-autoplay = "default"
-frame_progress = 0.0681335
-
-[node name="Coelho3" type="AnimatedSprite2D" parent="."]
-position = Vector2(1776, 57)
-scale = Vector2(0.5, 0.5)
-sprite_frames = SubResource("SpriteFrames_s2nuh")
-autoplay = "default"
-frame_progress = 0.0681335
-flip_h = true
 
 [connection signal="pressed" from="pause_bttn/Pause_bttn" to="." method="_on_pause_bttn_pressed"]
