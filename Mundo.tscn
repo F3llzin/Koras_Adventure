@@ -354,7 +354,7 @@ position = Vector2(493, 66)
 
 [node name="chegada" parent="." instance=ExtResource("3_diagp")]
 position = Vector2(1577, 67)
-prox_Nivel = "res://Mundo2.tscn"
+prox_Nivel = "res://Mundo3.tscn"
 
 [node name="jogador" parent="." instance=ExtResource("3_lpart")]
 position = Vector2(139, 64)
@@ -592,6 +592,7 @@ offset_right = 108.0
 offset_bottom = -46.0
 
 [node name="andar" type="Label" parent="Instrucoes"]
+layout_mode = 0
 offset_right = 572.0
 offset_bottom = 42.0
 scale = Vector2(0.5, 0.5)
@@ -601,6 +602,7 @@ text = "Ande para direita e para esquerda com:"
 horizontal_alignment = 1
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="Instrucoes"]
+layout_mode = 0
 offset_left = 68.0
 offset_top = 12.0
 offset_right = 793.0
@@ -635,6 +637,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "\"a\", \"d\", respectivamente."
 
 [node name="pular" type="Label" parent="Instrucoes"]
+layout_mode = 0
 offset_left = 81.0
 offset_top = 78.0
 offset_right = 339.0
@@ -644,6 +647,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Para pular use a barra de espaço."
 
 [node name="pausar" type="Label" parent="Instrucoes"]
+layout_mode = 0
 offset_left = 66.0
 offset_top = 38.0
 offset_right = 384.0

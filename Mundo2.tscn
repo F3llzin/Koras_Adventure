@@ -697,7 +697,7 @@ autoplay = true
 
 [node name="chegada" parent="." instance=ExtResource("31_cfk2l")]
 position = Vector2(2762, 60)
-prox_Nivel = "res://Mundo3.tscn"
+prox_Nivel = "res://Mundo4.tscn"
 
 [node name="plataforma_cai" type="Node2D" parent="."]
 position = Vector2(150, 62)

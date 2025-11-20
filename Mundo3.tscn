@@ -610,7 +610,7 @@ scale = Vector2(1.3, 1.3)
 
 [node name="chegada" parent="." instance=ExtResource("17_xtgcd")]
 position = Vector2(2468.5, 44)
-prox_Nivel = "res://Mundo4.tscn"
+prox_Nivel = "res://Mundo2.tscn"
 
 [node name="jogador" parent="." instance=ExtResource("14_y7k0d")]
 position = Vector2(146, 65)

@@ -14,7 +14,7 @@ var direction
 var direcao
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
-@export var jump_height = 64
+@export var jump_height = 68
 @export var max_time_to_peak = 0.5
 
 var jump_velocity
