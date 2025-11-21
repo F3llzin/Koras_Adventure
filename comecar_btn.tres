@@ -1,6 +1,5 @@
-[gd_resource type="Theme" load_steps=8 format=3 uid="uid://bkn0dftw8jsu3"]
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://bkn0dftw8jsu3"]
 
-[ext_resource type="FontFile" uid="uid://bphwtilkabuay" path="res://import/Font/Kenney Future.ttf" id="1_ks27v"]
 [ext_resource type="Texture2D" uid="uid://cocexne588m52" path="res://Addons/Free/Menu/Buttons/comecar_focos.png" id="2_4um4a"]
 [ext_resource type="Texture2D" uid="uid://brrdr3wshy6lm" path="res://Addons/Free/Menu/Buttons/comecar_normal.png" id="3_qkv6m"]
 
@@ -38,7 +37,6 @@ expand_margin_bottom = 5.0
 
 [resource]
 Button/font_sizes/font_size = 18
-Button/fonts/font = ExtResource("1_ks27v")
 Button/styles/focus = SubResource("StyleBoxTexture_pamb3")
 Button/styles/hover = SubResource("StyleBoxTexture_2ehr6")
 Button/styles/normal = SubResource("StyleBoxTexture_lb3j5")

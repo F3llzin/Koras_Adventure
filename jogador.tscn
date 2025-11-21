@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://bh7sntndx4xcr"]
+[gd_scene load_steps=24 format=3 uid="uid://bh7sntndx4xcr"]
 
 [ext_resource type="Script" path="res://Scripts/jogador.gd" id="1_njupl"]
 [ext_resource type="Texture2D" uid="uid://cxae527n4bgit" path="res://Addons/Free/Main Characters/Protagonista/Kora_hiting.png" id="2_ahmxo"]
@@ -134,9 +134,6 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7iumc"]
 size = Vector2(20, 27.75)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_eu4es"]
-size = Vector2(18, 5)
-
 [node name="jogador" type="CharacterBody2D"]
 position = Vector2(0, -15)
 scale = Vector2(0.7, 0.8)
@@ -180,13 +177,4 @@ position = Vector2(-10, 0)
 target_position = Vector2(-10, 0)
 collision_mask = 4
 
-[node name="cabeca_colisor" type="Area2D" parent="."]
-collision_layer = 0
-collision_mask = 64
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="cabeca_colisor"]
-position = Vector2(0, -9)
-shape = SubResource("RectangleShape2D_eu4es")
-
 [connection signal="body_entered" from="HurtBox" to="." method="_on_hurt_box_body_entered"]
-[connection signal="body_entered" from="cabeca_colisor" to="." method="_on_cabeca_colisor_body_entered"]

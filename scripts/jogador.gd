@@ -14,7 +14,7 @@ var direction
 var direcao
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
-@export var jump_height = 68
+@export var jump_height = 72
 @export var max_time_to_peak = 0.5
 
 var jump_velocity
@@ -120,15 +120,6 @@ func _set_state():
 		animation.play(state)
 		
 
-
-func _on_cabeca_colisor_body_entered(body):
-	if body.has_method("quebrar_sprite"):
-		body.hit -= 1
-		if body.hit < 0:
-			body.quebrar_sprite()
-		else:
-			body.anim.play("hit")
-			body.criar_coletavel()
 			
 func death_fall_zone():
 	if Global.vida_jogador >= 0:

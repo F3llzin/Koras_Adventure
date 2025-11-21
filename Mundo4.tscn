@@ -31,11 +31,11 @@
 [ext_resource type="Texture2D" uid="uid://ke1blt8kun3f" path="res://Addons/Free/Items/Fruits/fruta_silvestre.png" id="31_e4gl1"]
 [ext_resource type="Script" path="res://Scripts/color.gd" id="32_3pkbn"]
 [ext_resource type="PackedScene" uid="uid://b3545jl6vdnu8" path="res://pause_menu.tscn" id="33_f4owe"]
-[ext_resource type="AudioStream" uid="uid://co7qk0q6cvpdt" path="res://Addons/Free/Sons/musica_outono.mp3" id="34_cpn0m"]
 [ext_resource type="PackedScene" uid="uid://dcie1hk7syhqi" path="res://final_jogo.tscn" id="35_gwbrs"]
 [ext_resource type="PackedScene" uid="uid://c3qj5a0124gj6" path="res://falling_plataform_prim.tscn" id="42_4di5w"]
 [ext_resource type="Texture2D" uid="uid://brto87g6bomaw" path="res://Addons/Free/Artes_jogo/casa_arvore.png" id="42_nrh3v"]
 [ext_resource type="Texture2D" uid="uid://cqrv586l1ulrg" path="res://Addons/Free/Artes_jogo/cerca.png" id="43_0b70h"]
+[ext_resource type="AudioStream" uid="uid://bdyvjkfthgglj" path="res://Addons/Free/Sons/Musica_primavera.mp3" id="43_3ph1j"]
 [ext_resource type="Texture2D" uid="uid://dj53lnv10oq0m" path="res://Addons/Free/Artes_jogo/girassol_flor.png" id="45_m8m4i"]
 [ext_resource type="PackedScene" uid="uid://cjce1tempefu0" path="res://cabrito.tscn" id="45_v32cm"]
 [ext_resource type="PackedScene" uid="uid://dqnmjic0vj527" path="res://coelho.tscn" id="46_8yku3"]
@@ -668,7 +668,6 @@ position = Vector2(1413, 53)
 scale = Vector2(0.7, 0.7)
 
 [node name="Cabrito" parent="personagens_Anim" instance=ExtResource("45_v32cm")]
-scale = Vector2(1, 1)
 
 [node name="Coelho" parent="personagens_Anim" instance=ExtResource("46_8yku3")]
 position = Vector2(477.143, 0)
@@ -974,7 +973,7 @@ script = ExtResource("32_3pkbn")
 position = Vector2(130, 61)
 
 [node name="som_fundo" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("34_cpn0m")
+stream = ExtResource("43_3ph1j")
 volume_db = -5.0
 pitch_scale = 0.9
 autoplay = true
