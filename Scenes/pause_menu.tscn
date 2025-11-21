@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" path="res://scripts/pause_menu.gd" id="1_robbk"]
 [ext_resource type="Texture2D" uid="uid://bjtj14xengrbx" path="res://Addons/Free/Artes_jogo/pause_tela.png" id="2_4qp37"]
-[ext_resource type="Theme" uid="uid://b63d1fnrx6v43" path="res://voltar_btn.tres" id="2_guuue"]
-[ext_resource type="Theme" uid="uid://c107bj6m3piu5" path="res://inicio.tres" id="3_21uyy"]
-[ext_resource type="Theme" uid="uid://c2cr74a1jy35o" path="res://sair_btn.tres" id="3_pwrtc"]
+[ext_resource type="Theme" uid="uid://b63d1fnrx6v43" path="res://Themes/voltar_btn.tres" id="2_guuue"]
+[ext_resource type="Theme" uid="uid://c107bj6m3piu5" path="res://Themes/inicio.tres" id="3_21uyy"]
+[ext_resource type="Theme" uid="uid://c2cr74a1jy35o" path="res://Themes/sair_btn.tres" id="3_pwrtc"]
 [ext_resource type="AudioStream" uid="uid://coj1gr4fggeap" path="res://Addons/Free/Sons/Trocadebotão.mp3" id="5_irw1t"]
 
 [sub_resource type="InputEventAction" id="InputEventAction_xjt2t"]

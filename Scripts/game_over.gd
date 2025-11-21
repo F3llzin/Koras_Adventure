@@ -17,7 +17,7 @@ func _process(delta):
 
 
 func _on_button_inicio_pressed():
-	get_tree().change_scene_to_file("res://Telainicio.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Telainicio.tscn")
 	
 
 

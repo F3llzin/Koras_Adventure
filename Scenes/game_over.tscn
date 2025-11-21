@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" path="res://Scripts/game_over.gd" id="1_gqxx6"]
 [ext_resource type="Texture2D" uid="uid://cqlisgl1q4t6" path="res://Addons/Free/Artes_jogo/bg_gameover.png" id="2_5w6pj"]
-[ext_resource type="Theme" uid="uid://c2cr74a1jy35o" path="res://sair_btn.tres" id="2_s1pb5"]
+[ext_resource type="Theme" uid="uid://c2cr74a1jy35o" path="res://Themes/sair_btn.tres" id="2_s1pb5"]
 [ext_resource type="Texture2D" uid="uid://basb6kkqeuh2u" path="res://Addons/Free/Artes_jogo/G_O.png" id="3_fnvbh"]
-[ext_resource type="Theme" uid="uid://c107bj6m3piu5" path="res://inicio.tres" id="3_qpyfi"]
+[ext_resource type="Theme" uid="uid://c107bj6m3piu5" path="res://Themes/inicio.tres" id="3_qpyfi"]
 [ext_resource type="AudioStream" uid="uid://de6ei0we22c1d" path="res://Addons/Free/Sons/Gameover2.mp3" id="6_ug33j"]
 [ext_resource type="AudioStream" uid="uid://coj1gr4fggeap" path="res://Addons/Free/Sons/Trocadebotão.mp3" id="7_8pkmc"]
 

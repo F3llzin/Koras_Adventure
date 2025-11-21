@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://ddl6ywyqg306v"]
 
 [ext_resource type="Script" path="res://Scripts/coletavel_ridge.gd" id="1_2h1qo"]
-[ext_resource type="PackedScene" uid="uid://d0et5ubiolsqn" path="res://coletavel_outono.tscn" id="2_3jhwk"]
+[ext_resource type="PackedScene" uid="uid://d0et5ubiolsqn" path="res://Scenes/coletavel_outono.tscn" id="2_3jhwk"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mubf3"]
 radius = 7.0

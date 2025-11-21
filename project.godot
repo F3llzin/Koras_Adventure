@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Kora´s adventure"
-run/main_scene="res://Telainicio.tscn"
+run/main_scene="res://Scenes/Telainicio.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 boot_splash/image="res://Addons/Free/Logo/original-small-dark-Kenney.png"
 config/icon="res://icon.svg"
@@ -56,7 +56,6 @@ mov._esquerda={
 2d_physics/layer_4="itens"
 2d_physics/layer_5="hitbox"
 2d_physics/layer_6="hurtbox"
-2d_physics/layer_7="head_colider"
 
 [physics]
 

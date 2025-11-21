@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dd0x0yhwj2esa"]
 
 [ext_resource type="Texture2D" uid="uid://b3lv4ma2m0c03" path="res://Addons/Free/Artes_jogo/Background_seletor_fases.png" id="1_1m6vc"]
-[ext_resource type="PackedScene" uid="uid://dm6valn4sw22r" path="res://fase_btn.tscn" id="1_bcumk"]
+[ext_resource type="PackedScene" uid="uid://dm6valn4sw22r" path="res://Scenes/fase_btn.tscn" id="1_bcumk"]
 
 [node name="seletor_fases" type="Control"]
 layout_mode = 3
@@ -26,7 +26,7 @@ offset_top = 168.0
 offset_right = 823.0
 offset_bottom = 176.0
 tranca = false
-nome_fase = "res://Mundo.tscn"
+nome_fase = "res://Scenes/Mundo_Verao.tscn"
 nmr_fase = "1"
 
 [node name="fase_btn2" parent="." instance=ExtResource("1_bcumk")]
@@ -35,7 +35,7 @@ offset_left = 774.0
 offset_top = 481.0
 offset_right = 782.0
 offset_bottom = 489.0
-nome_fase = "res://Mundo3.tscn"
+nome_fase = "res://Scenes/Mundo_Inverno.tscn"
 nmr_fase = "2"
 
 [node name="fase_btn3" parent="." instance=ExtResource("1_bcumk")]
@@ -44,7 +44,7 @@ offset_left = 278.0
 offset_top = 466.0
 offset_right = 286.0
 offset_bottom = 474.0
-nome_fase = "res://Mundo3.tscn"
+nome_fase = "res://Scenes/Mundo_Outono.tscn"
 nmr_fase = "3"
 fase_bloqueio = 1
 
@@ -54,6 +54,6 @@ offset_left = 234.0
 offset_top = 168.0
 offset_right = 242.0
 offset_bottom = 176.0
-nome_fase = "res://Mundo4.tscn"
+nome_fase = "res://Scenes/Mundo_Primavera.tscn"
 nmr_fase = "4"
 fase_bloqueio = 2

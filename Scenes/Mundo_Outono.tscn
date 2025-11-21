@@ -1,44 +1,44 @@
 [gd_scene load_steps=55 format=3 uid="uid://bsh5thx504yep"]
 
-[ext_resource type="Script" path="res://scripts/Mundo.gd" id="1_i3p3u"]
-[ext_resource type="PackedScene" uid="uid://d0et5ubiolsqn" path="res://coletavel_outono.tscn" id="2_h3tlj"]
-[ext_resource type="PackedScene" uid="uid://dwxwyfqud20x7" path="res://espinhos_area.tscn" id="2_q6egm"]
-[ext_resource type="PackedScene" uid="uid://bh7sntndx4xcr" path="res://jogador.tscn" id="3_rydyj"]
-[ext_resource type="PackedScene" uid="uid://cn86d25o00chr" path="res://arvore_outono_part.tscn" id="4_kbesr"]
-[ext_resource type="PackedScene" uid="uid://cc64vt0n8xfpo" path="res://enemy2.tscn" id="4_vmahg"]
-[ext_resource type="Texture2D" uid="uid://c5kyhqudgf6yv" path="res://Addons/Free/Artes_jogo/banco.png" id="6_ocj23"]
-[ext_resource type="Texture2D" uid="uid://dny5p8qfso2go" path="res://Addons/Free/Artes_jogo/placa.png" id="7_8y4x7"]
-[ext_resource type="Texture2D" uid="uid://bkhtti87im4c4" path="res://Addons/Free/Artes_jogo/arvore outono tipo 2.png" id="7_jwm24"]
-[ext_resource type="Texture2D" uid="uid://3bio45ilwi4r" path="res://Addons/Free/Artes_jogo/placa_perigo.png" id="9_cj84h"]
-[ext_resource type="Texture2D" uid="uid://c1b1en2vvvv88" path="res://Addons/Free/Artes_jogo/poste.png" id="11_yfoou"]
-[ext_resource type="Texture2D" uid="uid://c2jqqx4q2ekq6" path="res://Addons/Free/Artes_jogo/tronco_outono.png" id="12_5etbf"]
-[ext_resource type="Texture2D" uid="uid://chn3gxfmr7gfe" path="res://Addons/Free/Artes_jogo/tile.png" id="12_edkci"]
-[ext_resource type="Texture2D" uid="uid://iabagsomp7eh" path="res://Addons/Free/Artes_jogo/Decoracao/jarro_flor_dec.png" id="12_eglxm"]
-[ext_resource type="Texture2D" uid="uid://cdyoakf14m6ci" path="res://Addons/Free/Artes_jogo/casa_arvore2.png" id="13_1jkin"]
-[ext_resource type="Texture2D" uid="uid://bciljhdbud243" path="res://Addons/Free/Artes_jogo/ceu_outono.png" id="14_efi3v"]
-[ext_resource type="Texture2D" uid="uid://da2sbrosyl6ob" path="res://Addons/Free/Artes_jogo/bg_outono.png" id="15_x0131"]
-[ext_resource type="Texture2D" uid="uid://ch1rxp7vg7n7" path="res://Addons/Free/Artes_jogo/chao_outono.png" id="16_8sfim"]
-[ext_resource type="Script" path="res://Scripts/gerenciador_hud.gd" id="16_divxu"]
-[ext_resource type="PackedScene" uid="uid://bt5bn0p70du3r" path="res://zona_queda.tscn" id="17_7rj8e"]
-[ext_resource type="Texture2D" uid="uid://dpy657om4jxvn" path="res://Addons/Free/Artes_jogo/placa_out.png" id="17_a258m"]
-[ext_resource type="PackedScene" uid="uid://dbjm8b6gnn1fo" path="res://checkpoint_out.tscn" id="18_ohncg"]
-[ext_resource type="Texture2D" uid="uid://csdf3oeqfnxtf" path="res://Addons/Free/Main Characters/Inimigo Abobora/abobora_pulando.png" id="19_pa1y2"]
-[ext_resource type="Texture2D" uid="uid://tfong2ny4dfq" path="res://Addons/Free/Items/Fruits/noz.png" id="21_hh5uc"]
-[ext_resource type="Script" path="res://Scripts/transicao.gd" id="23_1kmm5"]
-[ext_resource type="Texture2D" uid="uid://b4f1v5d32io3f" path="res://Addons/Free/Menu/Buttons/Other/vida.png" id="23_njxoc"]
-[ext_resource type="Texture2D" uid="uid://c21dn5at16bc6" path="res://Addons/Free/Menu/Buttons/s_n.png" id="24_iw6c8"]
-[ext_resource type="PackedScene" uid="uid://b3545jl6vdnu8" path="res://pause_menu.tscn" id="24_mku6t"]
-[ext_resource type="Shader" path="res://shaders/transicao.gdshader" id="24_whxtc"]
-[ext_resource type="Texture2D" uid="uid://ch1wdkmkjmhx6" path="res://Addons/Free/Menu/Buttons/s_p.png" id="25_kikyd"]
-[ext_resource type="Script" path="res://Scripts/color.gd" id="25_rb68b"]
-[ext_resource type="Texture2D" uid="uid://b34dlgu6ww52c" path="res://Addons/Free/Menu/Buttons/sp_n.png" id="26_pibe3"]
-[ext_resource type="Texture2D" uid="uid://bd00x3ogbud7c" path="res://Addons/Free/Menu/Buttons/sp_p.png" id="27_pt12c"]
-[ext_resource type="PackedScene" uid="uid://d0p8x1lammvn0" path="res://falling_plataform.tscn" id="31_8gkyi"]
-[ext_resource type="PackedScene" uid="uid://6nmpv7lm4nij" path="res://chegada.tscn" id="31_cfk2l"]
-[ext_resource type="Theme" uid="uid://cacpanawqld15" path="res://PAUSE.tres" id="31_ddpkv"]
-[ext_resource type="Texture2D" uid="uid://bmbtwpsdhi1dw" path="res://Addons/Free/Artes_jogo/tronco_caido_outono.png" id="31_l0mjo"]
-[ext_resource type="AudioStream" uid="uid://co7qk0q6cvpdt" path="res://Addons/Free/Sons/musica_outono.mp3" id="31_u3hjo"]
-[ext_resource type="PackedScene" uid="uid://d7e3ujavp710" path="res://garrafa_vida.tscn" id="36_2hccg"]
+[ext_resource type="Script" path="res://scripts/Mundo.gd" id="1_gkplh"]
+[ext_resource type="PackedScene" uid="uid://d0et5ubiolsqn" path="res://Scenes/coletavel_outono.tscn" id="2_2gqwe"]
+[ext_resource type="PackedScene" uid="uid://d7e3ujavp710" path="res://Scenes/garrafa_vida.tscn" id="3_7mhwq"]
+[ext_resource type="PackedScene" uid="uid://dwxwyfqud20x7" path="res://Scenes/espinhos_area.tscn" id="4_6bk2d"]
+[ext_resource type="PackedScene" uid="uid://cn86d25o00chr" path="res://Scenes/arvore_outono_part.tscn" id="5_vwho8"]
+[ext_resource type="Texture2D" uid="uid://c5kyhqudgf6yv" path="res://Addons/Free/Artes_jogo/banco.png" id="6_ikm42"]
+[ext_resource type="Texture2D" uid="uid://bkhtti87im4c4" path="res://Addons/Free/Artes_jogo/arvore outono tipo 2.png" id="7_t653d"]
+[ext_resource type="Texture2D" uid="uid://dny5p8qfso2go" path="res://Addons/Free/Artes_jogo/placa.png" id="8_vusdw"]
+[ext_resource type="Texture2D" uid="uid://3bio45ilwi4r" path="res://Addons/Free/Artes_jogo/placa_perigo.png" id="9_tjt2e"]
+[ext_resource type="Texture2D" uid="uid://iabagsomp7eh" path="res://Addons/Free/Artes_jogo/Decoracao/jarro_flor_dec.png" id="10_rjpgc"]
+[ext_resource type="Texture2D" uid="uid://c1b1en2vvvv88" path="res://Addons/Free/Artes_jogo/poste.png" id="11_xbwtk"]
+[ext_resource type="Texture2D" uid="uid://bmbtwpsdhi1dw" path="res://Addons/Free/Artes_jogo/tronco_caido_outono.png" id="12_otu7m"]
+[ext_resource type="Texture2D" uid="uid://c2jqqx4q2ekq6" path="res://Addons/Free/Artes_jogo/tronco_outono.png" id="13_c66bs"]
+[ext_resource type="Texture2D" uid="uid://cdyoakf14m6ci" path="res://Addons/Free/Artes_jogo/casa_arvore2.png" id="14_bxs15"]
+[ext_resource type="Texture2D" uid="uid://dpy657om4jxvn" path="res://Addons/Free/Artes_jogo/placa_out.png" id="15_sgsu3"]
+[ext_resource type="PackedScene" uid="uid://cc64vt0n8xfpo" path="res://Scenes/enemy2.tscn" id="16_uyx1m"]
+[ext_resource type="PackedScene" uid="uid://bh7sntndx4xcr" path="res://Scenes/jogador.tscn" id="17_mt5hl"]
+[ext_resource type="PackedScene" uid="uid://dbjm8b6gnn1fo" path="res://Scenes/checkpoint_out.tscn" id="18_uixfh"]
+[ext_resource type="Texture2D" uid="uid://chn3gxfmr7gfe" path="res://Addons/Free/Artes_jogo/tile.png" id="19_6kqes"]
+[ext_resource type="Texture2D" uid="uid://bciljhdbud243" path="res://Addons/Free/Artes_jogo/ceu_outono.png" id="20_hds08"]
+[ext_resource type="Texture2D" uid="uid://da2sbrosyl6ob" path="res://Addons/Free/Artes_jogo/bg_outono.png" id="21_sidsl"]
+[ext_resource type="Texture2D" uid="uid://ch1rxp7vg7n7" path="res://Addons/Free/Artes_jogo/chao_outono.png" id="22_cltnc"]
+[ext_resource type="PackedScene" uid="uid://bt5bn0p70du3r" path="res://Scenes/zona_queda.tscn" id="23_2v1q6"]
+[ext_resource type="Texture2D" uid="uid://c21dn5at16bc6" path="res://Addons/Free/Menu/Buttons/s_n.png" id="24_iv8sc"]
+[ext_resource type="Texture2D" uid="uid://ch1wdkmkjmhx6" path="res://Addons/Free/Menu/Buttons/s_p.png" id="25_jmjpv"]
+[ext_resource type="Texture2D" uid="uid://b34dlgu6ww52c" path="res://Addons/Free/Menu/Buttons/sp_n.png" id="26_krt3t"]
+[ext_resource type="Texture2D" uid="uid://bd00x3ogbud7c" path="res://Addons/Free/Menu/Buttons/sp_p.png" id="27_o1dvr"]
+[ext_resource type="Script" path="res://Scripts/gerenciador_hud.gd" id="28_h0irx"]
+[ext_resource type="Texture2D" uid="uid://csdf3oeqfnxtf" path="res://Addons/Free/Main Characters/Inimigo Abobora/abobora_pulando.png" id="29_d6ysy"]
+[ext_resource type="Texture2D" uid="uid://tfong2ny4dfq" path="res://Addons/Free/Items/Fruits/noz.png" id="30_nkm7m"]
+[ext_resource type="Texture2D" uid="uid://b4f1v5d32io3f" path="res://Addons/Free/Menu/Buttons/Other/vida.png" id="31_hjo7v"]
+[ext_resource type="Theme" uid="uid://cacpanawqld15" path="res://Themes/PAUSE.tres" id="32_o0vep"]
+[ext_resource type="Script" path="res://Scripts/transicao.gd" id="33_8wwlp"]
+[ext_resource type="Shader" path="res://shaders/transicao.gdshader" id="34_li17b"]
+[ext_resource type="Script" path="res://Scripts/color.gd" id="35_s0ucg"]
+[ext_resource type="PackedScene" uid="uid://b3545jl6vdnu8" path="res://Scenes/pause_menu.tscn" id="36_8re8t"]
+[ext_resource type="AudioStream" uid="uid://co7qk0q6cvpdt" path="res://Addons/Free/Sons/musica_outono.mp3" id="37_l2p0q"]
+[ext_resource type="PackedScene" uid="uid://6nmpv7lm4nij" path="res://Scenes/chegada.tscn" id="38_h1leo"]
+[ext_resource type="PackedScene" uid="uid://d0p8x1lammvn0" path="res://Scenes/falling_plataform.tscn" id="39_4v5n5"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_eeb8d"]
 tile_data = PackedInt32Array(0, 1, 0)
@@ -56,7 +56,7 @@ tile_data = PackedInt32Array(0, 3, 0)
 tile_data = PackedInt32Array(0, 2, 0)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jlmv7"]
-texture = ExtResource("12_edkci")
+texture = ExtResource("19_6kqes")
 6:4/0 = 0
 6:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 6:4/0/physics_layer_0/angular_velocity = 0.0
@@ -139,23 +139,23 @@ pattern_4 = SubResource("TileMapPattern_gxu77")
 size = Vector2(64, 14.5)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6t3l6"]
-atlas = ExtResource("21_hh5uc")
+atlas = ExtResource("30_nkm7m")
 region = Rect2(0, 0, 31, 25)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lxmg6"]
-atlas = ExtResource("21_hh5uc")
+atlas = ExtResource("30_nkm7m")
 region = Rect2(31, 0, 31, 25)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_byxvn"]
-atlas = ExtResource("21_hh5uc")
+atlas = ExtResource("30_nkm7m")
 region = Rect2(62, 0, 31, 25)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rksb7"]
-atlas = ExtResource("21_hh5uc")
+atlas = ExtResource("30_nkm7m")
 region = Rect2(93, 0, 31, 25)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_w4mmc"]
-atlas = ExtResource("21_hh5uc")
+atlas = ExtResource("30_nkm7m")
 region = Rect2(124, 0, 31, 25)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vs1fo"]
@@ -182,72 +182,72 @@ animations = [{
 }]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_a886s"]
-shader = ExtResource("24_whxtc")
+shader = ExtResource("34_li17b")
 shader_parameter/lines = 10.0
 shader_parameter/threshold = 0.0
 shader_parameter/line_color_a = Color(1, 1, 1, 1)
 shader_parameter/line_color_b = Color(0, 0, 0, 1)
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_i3p3u")
+script = ExtResource("1_gkplh")
 
 [node name="coletaveis" type="Node2D" parent="."]
 position = Vector2(8, 120)
 
-[node name="cherry" parent="coletaveis" instance=ExtResource("2_h3tlj")]
+[node name="cherry" parent="coletaveis" instance=ExtResource("2_2gqwe")]
 position = Vector2(280, -105)
 
-[node name="cherry2" parent="coletaveis" instance=ExtResource("2_h3tlj")]
+[node name="cherry2" parent="coletaveis" instance=ExtResource("2_2gqwe")]
 position = Vector2(234, -82)
 
-[node name="cherry3" parent="coletaveis" instance=ExtResource("2_h3tlj")]
+[node name="cherry3" parent="coletaveis" instance=ExtResource("2_2gqwe")]
 position = Vector2(328, -81)
 
-[node name="cherry4" parent="coletaveis" instance=ExtResource("2_h3tlj")]
+[node name="cherry4" parent="coletaveis" instance=ExtResource("2_2gqwe")]
 position = Vector2(501, -76)
 
-[node name="cherry5" parent="coletaveis" instance=ExtResource("2_h3tlj")]
+[node name="cherry5" parent="coletaveis" instance=ExtResource("2_2gqwe")]
 position = Vector2(741, -51)
 
-[node name="cherry6" parent="coletaveis" instance=ExtResource("2_h3tlj")]
+[node name="cherry6" parent="coletaveis" instance=ExtResource("2_2gqwe")]
 position = Vector2(854, -52)
 
-[node name="cherry7" parent="coletaveis" instance=ExtResource("2_h3tlj")]
+[node name="cherry7" parent="coletaveis" instance=ExtResource("2_2gqwe")]
 position = Vector2(927, -52)
 
-[node name="cherry8" parent="coletaveis" instance=ExtResource("2_h3tlj")]
+[node name="cherry8" parent="coletaveis" instance=ExtResource("2_2gqwe")]
 position = Vector2(1091, -50)
 
-[node name="cherry9" parent="coletaveis" instance=ExtResource("2_h3tlj")]
+[node name="cherry9" parent="coletaveis" instance=ExtResource("2_2gqwe")]
 position = Vector2(1245, -52)
 
-[node name="cherry10" parent="coletaveis" instance=ExtResource("2_h3tlj")]
+[node name="cherry10" parent="coletaveis" instance=ExtResource("2_2gqwe")]
 position = Vector2(1392, -51)
 
-[node name="cherry11" parent="coletaveis" instance=ExtResource("2_h3tlj")]
+[node name="cherry11" parent="coletaveis" instance=ExtResource("2_2gqwe")]
 position = Vector2(1482, -74)
 
-[node name="cherry13" parent="coletaveis" instance=ExtResource("2_h3tlj")]
+[node name="cherry13" parent="coletaveis" instance=ExtResource("2_2gqwe")]
 position = Vector2(1640, -65)
 
-[node name="cherry12" parent="coletaveis" instance=ExtResource("2_h3tlj")]
+[node name="cherry12" parent="coletaveis" instance=ExtResource("2_2gqwe")]
 position = Vector2(1576, -65)
 
-[node name="cherry14" parent="coletaveis" instance=ExtResource("2_h3tlj")]
+[node name="cherry14" parent="coletaveis" instance=ExtResource("2_2gqwe")]
 position = Vector2(1756, -81)
 
-[node name="cherry17" parent="coletaveis" instance=ExtResource("2_h3tlj")]
+[node name="cherry17" parent="coletaveis" instance=ExtResource("2_2gqwe")]
 position = Vector2(1756, -112)
 
-[node name="cherry15" parent="coletaveis" instance=ExtResource("2_h3tlj")]
+[node name="cherry15" parent="coletaveis" instance=ExtResource("2_2gqwe")]
 position = Vector2(1804, -81)
 
-[node name="cherry16" parent="coletaveis" instance=ExtResource("2_h3tlj")]
+[node name="cherry16" parent="coletaveis" instance=ExtResource("2_2gqwe")]
 position = Vector2(1804, -111)
 
 [node name="vidas" type="Node2D" parent="."]
 
-[node name="garrafa_vida3" parent="vidas" instance=ExtResource("36_2hccg")]
+[node name="garrafa_vida3" parent="vidas" instance=ExtResource("3_7mhwq")]
 position = Vector2(1790, 24)
 scale = Vector2(0.7, 0.7)
 
@@ -255,27 +255,27 @@ scale = Vector2(0.7, 0.7)
 position = Vector2(117, 1)
 scale = Vector2(0.75, 0.75)
 
-[node name="espinhos_area" parent="espinhos" instance=ExtResource("2_q6egm")]
+[node name="espinhos_area" parent="espinhos" instance=ExtResource("4_6bk2d")]
 position = Vector2(217.333, 73.3333)
 
-[node name="espinhos_area3" parent="espinhos" instance=ExtResource("2_q6egm")]
+[node name="espinhos_area3" parent="espinhos" instance=ExtResource("4_6bk2d")]
 position = Vector2(408, 73.3333)
 
-[node name="espinhos_area2" parent="espinhos" instance=ExtResource("2_q6egm")]
+[node name="espinhos_area2" parent="espinhos" instance=ExtResource("4_6bk2d")]
 position = Vector2(1038.67, 94.6667)
 
-[node name="espinhos_area4" parent="espinhos" instance=ExtResource("2_q6egm")]
+[node name="espinhos_area4" parent="espinhos" instance=ExtResource("4_6bk2d")]
 position = Vector2(2004, 73.3333)
 
 [node name="decoracoes2" type="Node2D" parent="."]
 position = Vector2(-1, -89)
 
-[node name="Arvore" parent="decoracoes2" instance=ExtResource("4_kbesr")]
+[node name="Arvore" parent="decoracoes2" instance=ExtResource("5_vwho8")]
 position = Vector2(485, 120)
 scale = Vector2(1.8, 1.8)
 emit_qnd_jogo_iniciar = true
 
-[node name="Arvore2" parent="decoracoes2" instance=ExtResource("4_kbesr")]
+[node name="Arvore2" parent="decoracoes2" instance=ExtResource("5_vwho8")]
 position = Vector2(1712, 90)
 scale = Vector2(1.8, 1.8)
 emit_qnd_jogo_iniciar = true
@@ -283,33 +283,33 @@ emit_qnd_jogo_iniciar = true
 [node name="Banco" type="Sprite2D" parent="decoracoes2"]
 position = Vector2(1525, 158)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("6_ocj23")
+texture = ExtResource("6_ikm42")
 
 [node name="Banco2" type="Sprite2D" parent="decoracoes2"]
 position = Vector2(226, 157)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("6_ocj23")
+texture = ExtResource("6_ikm42")
 
 [node name="ArvoreOutonoTipo4" type="Sprite2D" parent="decoracoes2"]
 position = Vector2(2675, 106)
 scale = Vector2(1.8, 1.8)
-texture = ExtResource("7_jwm24")
+texture = ExtResource("7_t653d")
 
 [node name="ArvoreOutonoTipo5" type="Sprite2D" parent="decoracoes2"]
 position = Vector2(1552, 124)
 scale = Vector2(1.8, 1.8)
-texture = ExtResource("7_jwm24")
+texture = ExtResource("7_t653d")
 
 [node name="Placa" type="Sprite2D" parent="decoracoes2"]
 position = Vector2(843, 157)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("7_8y4x7")
+texture = ExtResource("8_vusdw")
 flip_h = true
 
 [node name="Placa2" type="Sprite2D" parent="decoracoes2"]
 position = Vector2(1492, 158)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("7_8y4x7")
+texture = ExtResource("8_vusdw")
 
 [node name="decoracoes" type="Node2D" parent="."]
 scale = Vector2(0.4, 0.4)
@@ -317,21 +317,21 @@ scale = Vector2(0.4, 0.4)
 [node name="PlacaPerigo" type="Sprite2D" parent="decoracoes"]
 position = Vector2(1640, 127.5)
 scale = Vector2(1.25, 1.25)
-texture = ExtResource("9_cj84h")
+texture = ExtResource("9_tjt2e")
 
 [node name="PlacaPerigo3" type="Sprite2D" parent="decoracoes"]
 position = Vector2(2605, 167.5)
 scale = Vector2(1.25, 1.25)
-texture = ExtResource("9_cj84h")
+texture = ExtResource("9_tjt2e")
 
 [node name="JarroFlorDec3" type="Sprite2D" parent="decoracoes"]
 position = Vector2(502.5, 175)
-texture = ExtResource("12_eglxm")
+texture = ExtResource("10_rjpgc")
 flip_h = true
 
 [node name="JarroFlorDec4" type="Sprite2D" parent="decoracoes"]
 position = Vector2(6827.5, 137.5)
-texture = ExtResource("12_eglxm")
+texture = ExtResource("10_rjpgc")
 
 [node name="Postes" type="Node2D" parent="decoracoes"]
 scale = Vector2(1.2, 1.2)
@@ -339,70 +339,70 @@ scale = Vector2(1.2, 1.2)
 [node name="Poste" type="Sprite2D" parent="decoracoes/Postes"]
 position = Vector2(4085.42, 62.5)
 scale = Vector2(3, 3)
-texture = ExtResource("11_yfoou")
+texture = ExtResource("11_xbwtk")
 
 [node name="Poste2" type="Sprite2D" parent="decoracoes/Postes"]
 position = Vector2(1185.42, 64.5833)
 scale = Vector2(3, 3)
-texture = ExtResource("11_yfoou")
+texture = ExtResource("11_xbwtk")
 
 [node name="Poste3" type="Sprite2D" parent="decoracoes/Postes"]
 position = Vector2(741.667, 97.9167)
 scale = Vector2(3, 3)
-texture = ExtResource("11_yfoou")
+texture = ExtResource("11_xbwtk")
 
 [node name="Poste4" type="Sprite2D" parent="decoracoes/Postes"]
 position = Vector2(264.583, 97.9167)
 scale = Vector2(3, 3)
-texture = ExtResource("11_yfoou")
+texture = ExtResource("11_xbwtk")
 
 [node name="Poste5" type="Sprite2D" parent="decoracoes/Postes"]
 position = Vector2(4835.42, 100)
 scale = Vector2(3, 3)
-texture = ExtResource("11_yfoou")
+texture = ExtResource("11_xbwtk")
 
 [node name="Poste6" type="Sprite2D" parent="decoracoes/Postes"]
 position = Vector2(5235.42, 100)
 scale = Vector2(3, 3)
-texture = ExtResource("11_yfoou")
+texture = ExtResource("11_xbwtk")
 
 [node name="TroncoTipo1_1" type="Sprite2D" parent="decoracoes"]
 position = Vector2(4470, 97.5)
 scale = Vector2(2.5, 2.5)
-texture = ExtResource("31_l0mjo")
+texture = ExtResource("12_otu7m")
 region_enabled = true
 region_rect = Rect2(2.45828, 12.3523, 29.2561, 16.9173)
 
 [node name="TroncoTipo1_2" type="Sprite2D" parent="decoracoes"]
 position = Vector2(6387.5, 175)
 scale = Vector2(2.5, 2.5)
-texture = ExtResource("31_l0mjo")
+texture = ExtResource("12_otu7m")
 region_enabled = true
 region_rect = Rect2(2.45828, 12.3523, 29.2561, 16.9173)
 
 [node name="TroncoTipo2_1" type="Sprite2D" parent="decoracoes"]
 position = Vector2(4967.5, 145)
 scale = Vector2(2.5, 2.5)
-texture = ExtResource("31_l0mjo")
+texture = ExtResource("12_otu7m")
 region_enabled = true
 region_rect = Rect2(31.0795, 24.0106, 14.3139, 17.2312)
 
 [node name="TroncoTipo2_2" type="Sprite2D" parent="decoracoes"]
 position = Vector2(6157.5, 180)
 scale = Vector2(2.5, 2.5)
-texture = ExtResource("31_l0mjo")
+texture = ExtResource("12_otu7m")
 region_enabled = true
 region_rect = Rect2(31.0795, 24.0106, 14.3139, 17.2312)
 
 [node name="TroncoOutono" type="Sprite2D" parent="decoracoes"]
 position = Vector2(4687.5, 107.5)
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("12_5etbf")
+texture = ExtResource("13_c66bs")
 
 [node name="CasaArvore2" type="Sprite2D" parent="decoracoes"]
 position = Vector2(5150, 72.5)
 scale = Vector2(4, 4)
-texture = ExtResource("13_1jkin")
+texture = ExtResource("14_bxs15")
 
 [node name="placa_seguir" type="Node2D" parent="decoracoes"]
 scale = Vector2(2.5, 2.5)
@@ -410,36 +410,36 @@ scale = Vector2(2.5, 2.5)
 [node name="PlacaSeguir" type="Sprite2D" parent="decoracoes/placa_seguir"]
 position = Vector2(170, 68)
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("17_a258m")
+texture = ExtResource("15_sgsu3")
 
 [node name="PlacaSeguir2" type="Sprite2D" parent="decoracoes/placa_seguir"]
 position = Vector2(1923, 51)
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("17_a258m")
+texture = ExtResource("15_sgsu3")
 
 [node name="PlacaSeguir3" type="Sprite2D" parent="decoracoes/placa_seguir"]
 position = Vector2(2615, 51)
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("17_a258m")
+texture = ExtResource("15_sgsu3")
 
 [node name="inimigos" type="Node2D" parent="."]
 
-[node name="Enemy" parent="inimigos" instance=ExtResource("4_vmahg")]
+[node name="Enemy" parent="inimigos" instance=ExtResource("16_uyx1m")]
 position = Vector2(357, 82)
 
-[node name="Enemy2" parent="inimigos" instance=ExtResource("4_vmahg")]
+[node name="Enemy2" parent="inimigos" instance=ExtResource("16_uyx1m")]
 position = Vector2(503, 82)
 
-[node name="Enemy3" parent="inimigos" instance=ExtResource("4_vmahg")]
+[node name="Enemy3" parent="inimigos" instance=ExtResource("16_uyx1m")]
 position = Vector2(2211, 96)
 
-[node name="Enemy4" parent="inimigos" instance=ExtResource("4_vmahg")]
+[node name="Enemy4" parent="inimigos" instance=ExtResource("16_uyx1m")]
 position = Vector2(2401, 99)
 
-[node name="jogador" parent="." instance=ExtResource("3_rydyj")]
+[node name="jogador" parent="." instance=ExtResource("17_mt5hl")]
 position = Vector2(150, 62)
 
-[node name="checkpoint" parent="." instance=ExtResource("18_ohncg")]
+[node name="checkpoint" parent="." instance=ExtResource("18_uixfh")]
 position = Vector2(610, 65)
 
 [node name="tile" type="TileMap" parent="."]
@@ -457,7 +457,7 @@ motion_mirroring = Vector2(408, 0)
 
 [node name="texture" type="Sprite2D" parent="BG/01"]
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("14_efi3v")
+texture = ExtResource("20_hds08")
 centered = false
 
 [node name="02" type="ParallaxLayer" parent="BG"]
@@ -466,7 +466,7 @@ motion_mirroring = Vector2(408, 0)
 
 [node name="texture" type="Sprite2D" parent="BG/02"]
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("15_x0131")
+texture = ExtResource("21_sidsl")
 centered = false
 
 [node name="03" type="ParallaxLayer" parent="BG"]
@@ -475,7 +475,7 @@ motion_mirroring = Vector2(408, 0)
 
 [node name="texture" type="Sprite2D" parent="BG/03"]
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("16_8sfim")
+texture = ExtResource("22_cltnc")
 centered = false
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -494,63 +494,63 @@ editor_draw_drag_margin = true
 [node name="area_queda" type="Node2D" parent="."]
 position = Vector2(-432, 1)
 
-[node name="zona_queda" parent="area_queda" instance=ExtResource("17_7rj8e")]
+[node name="zona_queda" parent="area_queda" instance=ExtResource("23_2v1q6")]
 position = Vector2(1149, 106)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="area_queda/zona_queda"]
 position = Vector2(-13, -2.25)
 shape = SubResource("RectangleShape2D_h8yfa")
 
-[node name="zona_queda2" parent="area_queda" instance=ExtResource("17_7rj8e")]
+[node name="zona_queda2" parent="area_queda" instance=ExtResource("23_2v1q6")]
 position = Vector2(1246, 106)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="area_queda/zona_queda2"]
 position = Vector2(-13, -2.25)
 shape = SubResource("RectangleShape2D_h8yfa")
 
-[node name="zona_queda3" parent="area_queda" instance=ExtResource("17_7rj8e")]
+[node name="zona_queda3" parent="area_queda" instance=ExtResource("23_2v1q6")]
 position = Vector2(1437, 106)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="area_queda/zona_queda3"]
 position = Vector2(-13, -2.25)
 shape = SubResource("RectangleShape2D_h8yfa")
 
-[node name="zona_queda4" parent="area_queda" instance=ExtResource("17_7rj8e")]
+[node name="zona_queda4" parent="area_queda" instance=ExtResource("23_2v1q6")]
 position = Vector2(1531, 108)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="area_queda/zona_queda4"]
 position = Vector2(-13, -2.25)
 shape = SubResource("RectangleShape2D_h8yfa")
 
-[node name="zona_queda5" parent="area_queda" instance=ExtResource("17_7rj8e")]
+[node name="zona_queda5" parent="area_queda" instance=ExtResource("23_2v1q6")]
 position = Vector2(1596, 108)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="area_queda/zona_queda5"]
 position = Vector2(-13, -2.25)
 shape = SubResource("RectangleShape2D_h8yfa")
 
-[node name="zona_queda6" parent="area_queda" instance=ExtResource("17_7rj8e")]
+[node name="zona_queda6" parent="area_queda" instance=ExtResource("23_2v1q6")]
 position = Vector2(1661, 108)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="area_queda/zona_queda6"]
 position = Vector2(-13, -2.25)
 shape = SubResource("RectangleShape2D_h8yfa")
 
-[node name="zona_queda7" parent="area_queda" instance=ExtResource("17_7rj8e")]
+[node name="zona_queda7" parent="area_queda" instance=ExtResource("23_2v1q6")]
 position = Vector2(1726, 108)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="area_queda/zona_queda7"]
 position = Vector2(-13, -2.25)
 shape = SubResource("RectangleShape2D_h8yfa")
 
-[node name="zona_queda8" parent="area_queda" instance=ExtResource("17_7rj8e")]
+[node name="zona_queda8" parent="area_queda" instance=ExtResource("23_2v1q6")]
 position = Vector2(1791, 108)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="area_queda/zona_queda8"]
 position = Vector2(-13, -2.25)
 shape = SubResource("RectangleShape2D_h8yfa")
 
-[node name="zona_queda9" parent="area_queda" instance=ExtResource("17_7rj8e")]
+[node name="zona_queda9" parent="area_queda" instance=ExtResource("23_2v1q6")]
 position = Vector2(1856, 108)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="area_queda/zona_queda9"]
@@ -563,24 +563,24 @@ shape = SubResource("RectangleShape2D_h8yfa")
 position = Vector2(328, 647)
 rotation = 3.14159
 scale = Vector2(4, 4)
-texture_normal = ExtResource("24_iw6c8")
-texture_pressed = ExtResource("25_kikyd")
+texture_normal = ExtResource("24_iv8sc")
+texture_pressed = ExtResource("25_jmjpv")
 action = "ui_right"
 visibility_mode = 1
 
 [node name="ui_dir" type="TouchScreenButton" parent="mobile"]
 position = Vector2(3, 519)
 scale = Vector2(4, 4)
-texture_normal = ExtResource("24_iw6c8")
-texture_pressed = ExtResource("25_kikyd")
+texture_normal = ExtResource("24_iv8sc")
+texture_pressed = ExtResource("25_jmjpv")
 action = "ui_left"
 visibility_mode = 1
 
 [node name="ui_pulo" type="TouchScreenButton" parent="mobile"]
 position = Vector2(1024, 520)
 scale = Vector2(4, 4)
-texture_normal = ExtResource("26_pibe3")
-texture_pressed = ExtResource("27_pt12c")
+texture_normal = ExtResource("26_krt3t")
+texture_pressed = ExtResource("27_o1dvr")
 action = "ui_accept"
 visibility_mode = 1
 
@@ -593,7 +593,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("16_divxu")
+script = ExtResource("28_h0irx")
 
 [node name="container" type="MarginContainer" parent="hud/control"]
 layout_mode = 1
@@ -615,7 +615,7 @@ size_flags_vertical = 0
 [node name="Sprite2D" type="Sprite2D" parent="hud/control/container/abates"]
 position = Vector2(-25, 14)
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("19_pa1y2")
+texture = ExtResource("29_d6ysy")
 region_enabled = true
 region_rect = Rect2(0, 2.98803, 22.2531, 23.012)
 
@@ -657,7 +657,7 @@ size_flags_vertical = 0
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
-texture = ExtResource("23_njxoc")
+texture = ExtResource("31_hjo7v")
 
 [node name="pause_bttn" type="CanvasLayer" parent="."]
 
@@ -669,10 +669,10 @@ offset_bottom = 55.0
 scale = Vector2(1.2, 1.2)
 size_flags_horizontal = 4
 size_flags_vertical = 8
-theme = ExtResource("31_ddpkv")
+theme = ExtResource("32_o0vep")
 
 [node name="transicao" type="CanvasLayer" parent="."]
-script = ExtResource("23_1kmm5")
+script = ExtResource("33_8wwlp")
 
 [node name="color" type="ColorRect" parent="transicao"]
 material = SubResource("ShaderMaterial_a886s")
@@ -682,22 +682,22 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-script = ExtResource("25_rb68b")
+script = ExtResource("35_s0ucg")
 
-[node name="pause_menu2" parent="." instance=ExtResource("24_mku6t")]
+[node name="pause_menu2" parent="." instance=ExtResource("36_8re8t")]
 
 [node name="posicao_inicial" type="Marker2D" parent="."]
 position = Vector2(130, 61)
 
 [node name="som_fundo" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("31_u3hjo")
+stream = ExtResource("37_l2p0q")
 volume_db = -5.0
 pitch_scale = 0.9
 autoplay = true
 
-[node name="chegada" parent="." instance=ExtResource("31_cfk2l")]
+[node name="chegada" parent="." instance=ExtResource("38_h1leo")]
 position = Vector2(2762, 60)
-prox_Nivel = "res://Mundo4.tscn"
+prox_Nivel = "res://Scenes/Mundo_Primavera.tscn"
 
 [node name="plataforma_cai" type="Node2D" parent="."]
 position = Vector2(150, 62)
@@ -705,26 +705,26 @@ position = Vector2(150, 62)
 [node name="Falling_plataform" type="Node2D" parent="plataforma_cai"]
 position = Vector2(949, 25)
 
-[node name="falling_plataform" parent="plataforma_cai/Falling_plataform" instance=ExtResource("31_8gkyi")]
+[node name="falling_plataform" parent="plataforma_cai/Falling_plataform" instance=ExtResource("39_4v5n5")]
 
 [node name="Falling_plataform2" type="Node2D" parent="plataforma_cai"]
 position = Vector2(1027, 25)
 
-[node name="falling_plataform" parent="plataforma_cai/Falling_plataform2" instance=ExtResource("31_8gkyi")]
+[node name="falling_plataform" parent="plataforma_cai/Falling_plataform2" instance=ExtResource("39_4v5n5")]
 
 [node name="Falling_plataform3" type="Node2D" parent="plataforma_cai"]
 position = Vector2(1102, 25)
 
-[node name="falling_plataform" parent="plataforma_cai/Falling_plataform3" instance=ExtResource("31_8gkyi")]
+[node name="falling_plataform" parent="plataforma_cai/Falling_plataform3" instance=ExtResource("39_4v5n5")]
 
 [node name="Falling_plataform4" type="Node2D" parent="plataforma_cai"]
 position = Vector2(1177, 25)
 
-[node name="falling_plataform" parent="plataforma_cai/Falling_plataform4" instance=ExtResource("31_8gkyi")]
+[node name="falling_plataform" parent="plataforma_cai/Falling_plataform4" instance=ExtResource("39_4v5n5")]
 
 [node name="Falling_plataform5" type="Node2D" parent="plataforma_cai"]
 position = Vector2(1250, 25)
 
-[node name="falling_plataform" parent="plataforma_cai/Falling_plataform5" instance=ExtResource("31_8gkyi")]
+[node name="falling_plataform" parent="plataforma_cai/Falling_plataform5" instance=ExtResource("39_4v5n5")]
 
 [connection signal="pressed" from="pause_bttn/Pause_bttn" to="." method="_on_pause_bttn_pressed"]

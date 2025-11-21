@@ -13,14 +13,14 @@ func _process(_delta):
 
 func _on_button_start_pressed():
 	Global.fase = 0
-	get_tree().change_scene_to_file("res://seletor_fases.tscn")
+	get_tree().change_scene_to_file("res://Scenes/seletor_fases.tscn")
 
 func _on_button_quit_pressed():
 	get_tree().quit()
 
 func _on_button_continue_pressed():
 	if !tranca:
-		get_tree().change_scene_to_file("res://seletor_fases.tscn")
+		get_tree().change_scene_to_file("res://Scenes/seletor_fases.tscn")
 	
 	
 func _ready():

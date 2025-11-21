@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://cc64vt0n8xfpo"]
+[gd_scene load_steps=13 format=3 uid="uid://b8lhe2amprayo"]
 
-[ext_resource type="Script" path="res://Scripts/enemy2.gd" id="1_1lh5b"]
-[ext_resource type="Texture2D" uid="uid://csdf3oeqfnxtf" path="res://Addons/Free/Main Characters/Inimigo Abobora/abobora_pulando.png" id="3_l438a"]
-[ext_resource type="Texture2D" uid="uid://q67e3oih6iir" path="res://Addons/Free/Main Characters/Inimigo Abobora/abobora_hit.png" id="4_x5hr6"]
-[ext_resource type="PackedScene" uid="uid://cv0a0xin45ckl" path="res://hit_box.tscn" id="6_f85c7"]
+[ext_resource type="Script" path="res://Scripts/enemy3.gd" id="1_nu6ne"]
+[ext_resource type="Texture2D" uid="uid://csdf3oeqfnxtf" path="res://Addons/Free/Main Characters/Inimigo Abobora/abobora_pulando.png" id="2_mvdos"]
+[ext_resource type="Texture2D" uid="uid://cmkh15bb5wb5g" path="res://Addons/Free/Main Characters/Inimigo Urso/Urso_andando.png" id="3_6hoq8"]
+[ext_resource type="Texture2D" uid="uid://bh0bejxgkcfsr" path="res://Addons/Free/Main Characters/Inimigo Urso/Urso_Dano.png" id="4_1rjtn"]
+[ext_resource type="PackedScene" uid="uid://cv0a0xin45ckl" path="res://Scenes/hit_box.tscn" id="4_7rxkd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ow6fw"]
 size = Vector2(21, 21)
@@ -22,7 +23,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("3_l438a")]
+"values": [ExtResource("3_6hoq8")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -34,7 +35,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [9]
+"values": [4]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -51,7 +52,7 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id="Animation_ky4xq"]
 resource_name = "Dano"
-length = 0.2
+length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -62,7 +63,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("4_x5hr6")]
+"values": [ExtResource("4_1rjtn")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -74,7 +75,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [10]
+"values": [5]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -83,10 +84,10 @@ tracks/2/path = NodePath("anim:frame")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [0, 1, 2]
+"values": [0, 1, 2, 2, 3]
 }
 
 [sub_resource type="Animation" id="Animation_hwnsx"]
@@ -102,7 +103,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("3_l438a")]
+"values": [ExtResource("3_6hoq8")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -114,7 +115,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [9]
+"values": [4]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -123,10 +124,10 @@ tracks/2/path = NodePath("anim:frame")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.1),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [0, 1]
+"values": [1]
 }
 
 [sub_resource type="Animation" id="Animation_uhgr1"]
@@ -141,7 +142,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("3_l438a")]
+"values": [ExtResource("2_mvdos")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -180,14 +181,15 @@ _data = {
 size = Vector2(21, 2)
 
 [node name="Enemy" type="CharacterBody2D" groups=["inimigos"]]
+position = Vector2(0, 1)
 collision_layer = 4
 collision_mask = 2
-script = ExtResource("1_1lh5b")
+script = ExtResource("1_nu6ne")
 
 [node name="anim" type="Sprite2D" parent="."]
 position = Vector2(0, -16)
-texture = ExtResource("3_l438a")
-flip_h = true
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("2_mvdos")
 hframes = 9
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -206,7 +208,7 @@ position = Vector2(0, -15)
 target_position = Vector2(-15, 0)
 collision_mask = 6
 
-[node name="HitBox" parent="." instance=ExtResource("6_f85c7")]
+[node name="HitBox" parent="." instance=ExtResource("4_7rxkd")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
 position = Vector2(-0.5, -25)

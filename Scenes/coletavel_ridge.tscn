@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://c715hclrpqm3"]
 
-[ext_resource type="PackedScene" uid="uid://dwad24qiyqrnp" path="res://coletavel.tscn" id="1_e3swf"]
+[ext_resource type="PackedScene" uid="uid://dwad24qiyqrnp" path="res://Scenes/coletavel.tscn" id="1_e3swf"]
 [ext_resource type="Script" path="res://Scripts/coletavel_ridge.gd" id="1_uh0bj"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mubf3"]

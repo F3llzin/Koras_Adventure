@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_awh8f"]
 [ext_resource type="Texture2D" uid="uid://bds40i6cckn8h" path="res://Addons/Free/Main Characters/Inimigo Caranguejo/caranguejo_walk.png" id="3_48ml1"]
 [ext_resource type="Texture2D" uid="uid://bg1h7bpdqlqp1" path="res://Addons/Free/Main Characters/Inimigo Caranguejo/caranguejo_hit.png" id="4_irmwk"]
-[ext_resource type="PackedScene" uid="uid://cv0a0xin45ckl" path="res://hit_box.tscn" id="4_yvute"]
+[ext_resource type="PackedScene" uid="uid://cv0a0xin45ckl" path="res://Scenes/hit_box.tscn" id="4_yvute"]
 [ext_resource type="Texture2D" uid="uid://d0dk0mvkebe4x" path="res://Addons/Free/Main Characters/Inimigo Caranguejo/caranguejo_idle.png" id="5_vcve0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ow6fw"]
