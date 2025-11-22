@@ -18,7 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://brto87g6bomaw" path="res://Addons/Free/Artes_jogo/casa_arvore.png" id="16_4os7f"]
 [ext_resource type="Texture2D" uid="uid://cqhcbu6swei1a" path="res://Addons/Free/Artes_jogo/tronco_primevera.png" id="17_cjcpt"]
 [ext_resource type="Texture2D" uid="uid://38xrtdf7iysv" path="res://Addons/Free/Artes_jogo/tronco_primevera2.png" id="18_muhmy"]
-[ext_resource type="PackedScene" uid="uid://cc64vt0n8xfpo" path="res://Scenes/enemy2.tscn" id="19_oqqvh"]
+[ext_resource type="PackedScene" uid="uid://dkmxcli7iq8jx" path="res://Scenes/enemy4.tscn" id="19_nvlvf"]
 [ext_resource type="PackedScene" uid="uid://cjce1tempefu0" path="res://Scenes/cabrito.tscn" id="20_kt1dy"]
 [ext_resource type="PackedScene" uid="uid://dqnmjic0vj527" path="res://Scenes/coelho.tscn" id="21_on8s2"]
 [ext_resource type="PackedScene" uid="uid://bh7sntndx4xcr" path="res://Scenes/jogador.tscn" id="22_efvib"]
@@ -34,7 +34,7 @@
 [ext_resource type="Texture2D" uid="uid://b34dlgu6ww52c" path="res://Addons/Free/Menu/Buttons/sp_n.png" id="32_hu7fy"]
 [ext_resource type="Texture2D" uid="uid://bd00x3ogbud7c" path="res://Addons/Free/Menu/Buttons/sp_p.png" id="33_bvyxx"]
 [ext_resource type="Script" path="res://Scripts/gerenciador_hud.gd" id="34_i2wb4"]
-[ext_resource type="Texture2D" uid="uid://csdf3oeqfnxtf" path="res://Addons/Free/Main Characters/Inimigo Abobora/abobora_pulando.png" id="35_u0x8u"]
+[ext_resource type="Texture2D" uid="uid://c3nh5bjg6klgc" path="res://Addons/Free/Main Characters/Inimigo Planta Carnivora/planta_andando.png" id="35_vohhw"]
 [ext_resource type="Texture2D" uid="uid://ke1blt8kun3f" path="res://Addons/Free/Items/Fruits/fruta_silvestre.png" id="36_ieaux"]
 [ext_resource type="Texture2D" uid="uid://b4f1v5d32io3f" path="res://Addons/Free/Menu/Buttons/Other/vida.png" id="37_wvjgc"]
 [ext_resource type="Theme" uid="uid://cacpanawqld15" path="res://Themes/PAUSE.tres" id="38_2yx6g"]
@@ -660,8 +660,8 @@ texture = ExtResource("18_muhmy")
 
 [node name="inimigos" type="Node2D" parent="."]
 
-[node name="Enemy" parent="inimigos" instance=ExtResource("19_oqqvh")]
-position = Vector2(805, 82)
+[node name="Enemy" parent="inimigos" instance=ExtResource("19_nvlvf")]
+position = Vector2(805, 74)
 
 [node name="personagens_Anim" type="Node2D" parent="."]
 position = Vector2(1413, 53)
@@ -898,9 +898,9 @@ size_flags_vertical = 0
 [node name="Sprite2D" type="Sprite2D" parent="hud/control/container/abates"]
 position = Vector2(-25, 14)
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("35_u0x8u")
+texture = ExtResource("35_vohhw")
 region_enabled = true
-region_rect = Rect2(0, 2.98803, 22.2531, 23.012)
+region_rect = Rect2(0, 8, 23.418, 32)
 
 [node name="abate_" type="Label" parent="hud/control/container/abates"]
 layout_mode = 2

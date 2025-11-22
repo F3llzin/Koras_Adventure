@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wr3omu254nci"
-path="res://.godot/imported/Kora_pulando.png-97938d3cb6b60174f57b6b9fdb0859b5.ctex"
+uid="uid://c3nh5bjg6klgc"
+path="res://.godot/imported/planta_andando.png-470dcb8185b979209b1ebb690114feed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Addons/Free/Main Characters/Protagonista/Kora_pulando.png"
-dest_files=["res://.godot/imported/Kora_pulando.png-97938d3cb6b60174f57b6b9fdb0859b5.ctex"]
+source_file="res://Addons/Free/Main Characters/Inimigo Planta Carnivora/planta_andando.png"
+dest_files=["res://.godot/imported/planta_andando.png-470dcb8185b979209b1ebb690114feed.ctex"]
 
 [params]
 
