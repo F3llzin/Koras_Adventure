@@ -1,5 +1,5 @@
 extends CharacterBody2D
-const coletavel_instance = preload("res://Scenes/coletavel_ridge_fruta_silvestre.tscn")
+const coletavel_instance = preload("res://Scenes/coletavel_ridge_noz.tscn")
 
 const SPEED = 700.0
 const JUMP_VELOCITY = -400.0
